@@ -58,7 +58,7 @@ Provides the `enlistallowduplicates` operator, a drop-in replacement for the
 
 ### Install
 
-This repository is the primary source for this plugin. The plugin files are
+This repository is the primary source for 'dtn' plugins. The plugin files are
 located in the repository's `plugins/dtn/enlist-allow-duplicates` directory.
 
 Version: 0.0.2, Installed: 2019-10-11.
@@ -124,7 +124,7 @@ The `enlist-allow-duplicates` plugin.
 
 ### Install
 
-This repository is the primary source for this plugin. The plugin files are
+This repository is the primary source for 'dtn' plugins. The plugin files are
 located in the repository's `plugins/dtn/insert-table` directory.
 
 Version: 0.0.6, Installed: 2019-10-11.
@@ -138,7 +138,7 @@ html and css.
 
 ### Install
 
-This repository is the primary source for this plugin. The plugin files are
+This repository is the primary source for 'dtn' plugins. The plugin files are
 located in the repository's `plugins/dtn/latex-logos` directory.
 
 Version: 0.0.2, Installed: 2019-10-01.
@@ -180,7 +180,7 @@ a skeleton tiddler
 
 ### Install
 
-This repository is the primary source for this plugin. The plugin files are
+This repository is the primary source for 'dtn' plugins. The plugin files are
 located in the repository's `plugins/dtn/new-from-skeleton` directory.
 
 Version: 0.0.2, Installed: 2019-10-11.
@@ -333,7 +333,7 @@ This plugin provides the following macros:
 
 ### Install
 
-This repository is the primary source for this plugin. The plugin files are
+This repository is the primary source for 'dtn' plugins. The plugin files are
 located in the repository's `plugins/dtn/utility-macros` directory.
 
 Version: 0.0.2, Installed: 2020-09-22.
