@@ -3,7 +3,7 @@
 These are the [Tiddlywiki](https://tiddlywiki.com/) plugins installed on my
 "Auxiliary Memory" tiddlywiki.
 
-## Commander (kookma/Commander)
+## Commander (plugins/kookma/commander)
 
 ### Summary
 
@@ -21,7 +21,7 @@ subdirectory.
 
 Version: 2.1.14, Installed: 2026-03-03.
 
-## ContextPlugin (danielo515/contextPlugin)
+## ContextPlugin (plugins/danielo515/context-plugin)
 
 ### Summary
 
@@ -49,7 +49,7 @@ the files `results` and `context.js`.
 
 Version: 2.1.0, Installed: 2026-03-03.
 
-## Enlist Allow Duplicates (dtn/EnlistAllowDuplicates)
+## Enlist Allow Duplicates (plugins/dtn/enlist-allow-duplicates)
 
 ## Summary
 
@@ -61,9 +61,9 @@ Provides the `enlistallowduplicates` operator, a drop-in replacement for the
 This repository is the primary source for this plugin. The plugin files are
 located in the repository's `plugins/dtn/enlist-allow-duplicates` directory.
 
-Version: 0.0.1, Installed: 2019-04-27.
+Version: 0.0.2, Installed: 2019-10-11.
 
-## Favorites (kookma/Favorites)
+## Favorites (plugins/kookma/favorites)
 
 ### Summary
 
@@ -111,7 +111,7 @@ tiddlywiki](http://scott.sauyet.com/tiddlywiki/plugins/FiraCode.html).
 
 Version: 1.0.0, Font version: 1.206, Installed: 2026-03-03.
 
-## Insert Table (dtn/InsertTable)
+## Insert Table (plugins/dtn/insert-table)
 
 ### Summary
 
@@ -127,9 +127,9 @@ The `enlist-allow-duplicates` plugin.
 This repository is the primary source for this plugin. The plugin files are
 located in the repository's `plugins/dtn/insert-table` directory.
 
-Version: 0.0.1, Installed: 2019-04-28.
+Version: 0.0.6, Installed: 2019-10-11.
 
-## Latex Logos (dtn/LatexLogos)
+## Latex Logos (plugins/dtn/latex-logos)
 
 ### Summary
 
@@ -141,7 +141,7 @@ html and css.
 This repository is the primary source for this plugin. The plugin files are
 located in the repository's `plugins/dtn/latex-logos` directory.
 
-Version: 0.1.1, Installed: 2019-01-10.
+Version: 0.0.2, Installed: 2019-10-01.
 
 ## Layout Tweaks (tongerner/LayoutTweaks)
 
@@ -171,7 +171,7 @@ The plugin files were obtained and converted from the plugin creator's
 
 Version: 1.0.4, Installed: 2026-03-03.
 
-## New from Skeleton (dtn/NewFromSkeleton)
+## New from Skeleton (plugins/dtn/new-from-skeleton)
 
 ### Summary
 
@@ -183,9 +183,9 @@ a skeleton tiddler
 This repository is the primary source for this plugin. The plugin files are
 located in the repository's `plugins/dtn/new-from-skeleton` directory.
 
-Version: 0.0.1, Installed: 2019-01-18.
+Version: 0.0.2, Installed: 2019-10-11.
 
-## Printify (kookma/Printify)
+## Printify (plugins/kookma/printify)
 
 ## Summary
 
@@ -199,7 +199,7 @@ The plugin files were in the repository's `source/printify` subdirectory.
 
 Version: 0.9.0, Installed: 2026-03-03.
 
-## Refnotes (kookma/Refnotes)
+## Refnotes (plugins/kookma/refnotes)
 
 ### Summary
 
@@ -215,7 +215,7 @@ The plugin files were in the repository's `source/refnotes` subdirectory.
 
 Version: 1.9.0, Installed: 2026-03-03.
 
-## Shiraz (kookma/Shiraz)
+## Shiraz (plugins/kookma/shiraz)
 
 ### Summary
 
@@ -234,7 +234,7 @@ Shiraz 3." Shiraz 3 will be installed when it is formally released.
 
 Version: 2.9.7, Installed: 2026-03-03.
 
-## tagSearch (danielo515/tagSearch)
+## tagSearch (plugins/danielo515/tag-search)
 
 ### Summary
 
@@ -276,7 +276,7 @@ The plugin files were obtained and converted from the plugin creator's
 
 Version: 0.0.22, Installed: 2026-03-03.
 
-## Timelines (kookma/Timelines)
+## Timelines (plugins/kookma/timelines)
 
 ### Summary
 
@@ -305,7 +305,7 @@ The plugin files were in the repository's `plugins/tinka` subdirectory.
 
 Version: 0.5.0, Installed: 2026-03-03.
 
-## Utility (kookma/Utility)
+## Utility (plugins/kookma/utility)
 
 ### Summary
 
@@ -319,3 +319,21 @@ The plugin files were obtained from the
 The plugin files were in the repository's `source/utility` subdirectory.
 
 Version: 3.2.3, Installed: 2026-03-03.
+
+## Utility Macros (plugins/dtn/utility-macros)
+
+### Summary
+
+This plugin provides the following macros:
+
+- `check-var-or-macro` – check whether macro or variable exists
+- `home-path-link` – display hyperlink to a path in user's home directory
+- `list-item-space` – add vertical space after a list item
+- `number-format` – format a number.
+
+### Install
+
+This repository is the primary source for this plugin. The plugin files are
+located in the repository's `plugins/dtn/utility-macros` directory.
+
+Version: 0.0.2, Installed: 2020-09-22.
