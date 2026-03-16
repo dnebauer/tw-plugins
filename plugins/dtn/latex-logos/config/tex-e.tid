@@ -1,0 +1,40 @@
+created: 20190210020226278
+font-size: 1em
+margin-left: -0.1667em
+margin-right: -0.125em
+modified: 20190210082003430
+title: $:/config/plugin/.dtn/latex-logos/tex-e
+type: text/vnd.tiddlywiki
+vertical-align: 0.1ex
+
+!! Configuration tiddler for the latex-logos plugin
+
+In the <<tex>> logo:
+
+* Override the shrinking of the ''E''
+* Move the ''E'' closer to both the preceding ''T'' and following ''X''
+* Adjust the vertical position of the ''E''
+
+This is done by adjusting the following css properties:
+
+; font-size
+: Default: 1em
+: Increase the positive value to make the font larger
+: Decrease the positive value to make the font smaller
+
+; margin-left
+: Increase the negative value to move the 'E' closer to the 'T'
+: Decrease the negative value to move the 'E' further from the 'T'
+: Default: -0.1667em
+
+; margin-right
+: Default: -0.125em
+: Increase the negative value to move the 'X' closer to the 'E'
+: Decrease the negative value to move the 'X' further from the 'E'
+
+; vertical-align
+: Default: 0.1ex
+: Increasing a positive value moves the 'E' further upward from it default position
+: Increasing a negative value moves the 'E' further downward from its default position
+
+The plugin uses the field values attached to this tiddler. They can be adjusted directly or via the plugin information tiddler [[$:/plugins/.dtn/latex-logos/config]].

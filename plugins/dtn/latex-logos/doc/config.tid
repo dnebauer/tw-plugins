@@ -1,0 +1,280 @@
+created: 20190210073541341
+modified: 20190210112148204
+tags: 
+title: $:/plugins/.dtn/latex-logos/config
+type: text/vnd.tiddlywiki
+
+! Explanatory notes
+
+Jump straight down to Configuration if you want to skip this explanation.
+
+Because this plugin's logos are created with plain html and css, the final sizing and placement of letters in logos may depend on the browser, font, desktop environment and operating system in use. The default css values were chosen to give the logos the best appearance in [[qutebrowser|https://www.qutebrowser.org/]] on [[debian linux 8|https://www.debian.org/]]/[[GNOME 3|https://www.gnome.org/gnome-3/]] with default fonts. On other systems you may want to adjust these values to improve logo appearance.
+
+These css properties can be configured to change the appearance of certain characters in the logos:
+
+|table-borderless|k
+|   CSS property|Effect on character                      |h
+|      font-size|font size                                |
+|    left-margin|distance from the character to its left  |
+|   right-margin|distance from the character to its right |
+| vertical-align|vertical position                        |
+
+Here is some guidance on how to adjust these css property values:
+
+; font-size
+* em unit
+* positive values only
+* smaller values result in smaller fonts
+
+; margin-left
+* em units
+* acts on the defined character (and so also all characters to its right)
+* positive values shift the defined character to the right
+* negative values shift the defined character to the left, i.e., closer to the preceding character, so you will usually use negative values
+* in short, increasingly negative values increasingly reduce the space between the defined character and the character to its left
+
+; margin-right
+* em units
+* acts on all characters to the //right// of the defined character
+* positive values shift those characters to the right
+* negative values shift those characters to the left, i.e., closer to the defined characters, so you will usually use negative values
+* in short, increasingly negative values increasingly reduce the space between the defined character and the character to its right
+
+; vertical-align
+* ex units
+* same behaviour for all characters whether subscripted or superscripted or neither
+* negative values move characters down
+* positive values move characters up
+
+! Configuration
+
+<table style="border: none !important;">
+<tr>
+<td style="vertical-align:top; border: none !important;">
+
+  <h2>''E'' in ''<<tex>>'':</h2>
+
+  <table style="border: none !important; margin-left:1em;">
+  <tr style="border:none !important;">
+  <td style="border:none !important; text-align:right;">font-size</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/tex-e"
+                field="font-size"
+                placeholder="1em" />
+  </td>
+  </tr>
+  <tr style="border:none !important;">
+  <td style="border:none !important; text-align:right;">margin-left</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/tex-e"
+                field="margin-left"
+                placeholder="-0.1667em" />
+  </td>
+  </tr>
+  <tr style="border:none !important;">
+  <td style="border:none !important; text-align:right;">margin-right</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/tex-e"
+                field="margin-right"
+                placeholder="-0.125em" />
+  </td>
+  </tr>
+  <tr style="border:none !important;">
+  <td style="border:none !important; text-align:right;">vertical-align</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/tex-e"
+                field="vertical-align"
+                placeholder="0.1ex" />
+  </td>
+  </tr>
+  </table>
+
+</td>
+<td style="vertical-align:top; border: none !important;">
+
+  <h2>''A'' in ''<<latex>>'':</h2>
+
+  <table style="border:0 solid transparent; margin-left:1em;">
+  <tr>
+  <td style="border:none !important; text-align:right;">font-size</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/latex-a"
+                field="font-size"
+                placeholder="0.80em" />
+  </td>
+  </tr>
+  <tr>
+  <td style="border:none !important; text-align:right;">margin-left</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/latex-a"
+                field="margin-left"
+                placeholder="-0.36em" />
+  </td>
+  </tr>
+  <tr>
+  <td style="border:none !important; text-align:right;">margin-right</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/latex-a"
+                field="margin-right"
+                placeholder="-0.15em" />
+  </td>
+  </tr>
+  <tr>
+  <td style="border:none !important; text-align:right;">vertical-align</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/latex-a"
+                field="vertical-align"
+                placeholder="-0.55ex" />
+  </td>
+  </tr>
+  </table>
+
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; border: none !important;">
+
+  <h2>''Ǝ'' in ''<<xetex>>'':</h2>
+
+  <table style="border:none !important; margin-left:1em;">
+  <tr>
+  <td style="border:none !important; text-align:right;">font-size</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/xetex-ɘ"
+                field="font-size"
+                placeholder="1em" />
+  </td>
+  </tr>
+  <tr>
+  <td style="border:none !important; text-align:right;">margin-left</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/xetex-ɘ"
+                field="margin-left"
+                placeholder="-0.125em" />
+  </td>
+  </tr>
+  <tr>
+  <td style="border:none !important; text-align:right;">margin-right</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/xetex-ɘ"
+                field="margin-right"
+                placeholder="-0.1667em" />
+  </td>
+  </tr>
+  <tr>
+  <td style="border:none !important; text-align:right;">vertical-align</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/xetex-ɘ"
+                field="vertical-align"
+                placeholder="0.1ex" />
+  </td>
+  </tr>
+  </table>
+  
+The values for <<xetex>> and <<xelatex>> are usually the same except for //margin-right//, which is usually smaller (i.e., closer to zero) in <<xelatex>> than it is in <<xetex>>.
+
+</td>
+<td style="vertical-align:top; border: none !important;">
+
+  <h2>''Ǝ'' in ''<<xelatex>>'':</h2>
+  
+  <table style="border:none !important; margin-left:1em;">
+  <tr>
+  <td style="border:none !important; text-align:right;">font-size</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/xelatex-ɘ"
+                field="font-size"
+                placeholder="1em" />
+  </td>
+  </tr>
+  <tr>
+  <td style="border:none !important; text-align:right;">margin-left</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/xelatex-ɘ"
+                field="margin-left"
+                placeholder="-0.125em" />
+  </td>
+  </tr>
+  <tr>
+  <td style="border:none !important; text-align:right;">margin-right</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/xelatex-ɘ"
+                field="margin-right"
+                placeholder="0em" />
+  </td>
+  </tr>
+  <tr>
+  <td style="border:none !important; text-align:right;">vertical-align</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/xelatex-ɘ"
+                field="vertical-align"
+                placeholder="0.1ex" />
+  </td>
+  </tr>
+  </table>
+  
+The values for <<xetex>> and <<xelatex>> are usually the same except for //margin-right//, which is usually smaller (i.e., closer to zero) in <<xelatex>> than it is in <<xetex>>.
+
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; border: none !important;">
+
+  <h2>''a'' in ''<<luatex>>'':</h2>
+  
+  <table style="border:none !important; margin-left:1em;">
+  <tr>
+  <td style="border:none !important; text-align:right;">margin-right</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/luatex-a"
+                field="margin-right"
+                placeholder="-0.15em" />
+  </td>
+  </tr>
+  </table>
+
+</td>
+<td style="vertical-align:top; border: none !important;">
+  
+  <h2>''IB'' in ''<<bibtex>>'':</h2>
+  
+  <table style="border:none !important; margin-left:1em;">
+  <tr>
+  <td style="border:none !important; text-align:right;">font-size</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/bibtex-ib"
+                field="font-size"
+                placeholder="0.8em" />
+  </td>
+  </tr>
+  <tr>
+  <td style="border:none !important; text-align:right;">margin-right</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/bibtex-ib"
+                field="margin-right"
+                placeholder="-0.15em" />
+  </td>
+  </tr>
+  </table>
+
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; border: none !important;">
+
+  <h2>''n'' in ''<<context>>'':</h2>
+  
+  <table style="border:none !important; margin-left:1em;">
+  <tr>
+  <td style="border:none !important; text-align:right;">margin-right</td>
+  <td style="border:none !important; padding-right:1em;">
+    <$edit-text tiddler="$:/config/plugin/.dtn/latex-logos/context-n"
+                field="margin-right"
+                placeholder="-0.15em" />
+  </td>
+  </tr>
+  </table>
+
+</td>
+</tr>
+</table>

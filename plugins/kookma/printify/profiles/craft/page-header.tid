@@ -1,0 +1,46 @@
+code-body: yes
+created: 20250903171320311
+modified: 20250903193030456
+profile: craft
+tags: $:/tags/Printify/ProfileStyle
+title: $:/plugins/kookma/printify/profiles/craft/page-header
+type: text/vnd.tiddlywiki
+
+@page{
+	/* you have set one by one, under @page it seems you cannot set several values at once */
+	@top-left {
+		content: "My TiddlyWiki - Left \A Second line of text";
+		white-space: pre;
+		line-height:1.4em;
+		font-size: 10pt;
+		font-weight: 600;
+		
+		border-bottom: 2pt solid;
+		vertical-align: bottom;
+		padding-bottom:10px;	
+	}
+
+	@top-center {
+		content: "Document Title Centered";
+		white-space: pre;
+		line-height:1.4em;
+		font-size: 10pt;
+		font-weight: 600;		
+		
+		border-bottom: 2pt solid;
+		vertical-align: bottom;
+		padding-bottom:10px;	
+	}
+
+	@top-right {
+		content: "Header - top right";
+		white-space: pre;
+		line-height:1.4em;
+		font-size: 10pt;
+		font-weight: 600;		
+		
+		border-bottom: 2pt solid;
+		vertical-align: bottom;
+		padding-bottom:10px;	
+	}
+}

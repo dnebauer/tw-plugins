@@ -1,0 +1,19 @@
+caption: {{$:/plugins/kookma/printify/language/SideBar/More/Caption}}
+created: 20250901050440557
+modified: 20250901050825324
+tags: $:/tags/Printify/SideBar
+title: $:/plugins/kookma/printify/ui/SideBar/More
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\function printify.more.tabs()
+[[$:/core/ui/MoreSideBar/All]]
+[[$:/core/ui/MoreSideBar/Recent]]
+[[$:/core/ui/MoreSideBar/Tags]]
+[[$:/plugins/kookma/tweaks/ui/MoreSideBar/User]]
+[all[tiddlers+shadows]tag[$:/tags/Printify/MoreSideBar]]
+:filter[has[title]]
+\end
+<div class="tc-more-sidebar">
+<$macrocall $name="tabs" tabsList="[printify.more.tabs[]]" default="$:/core/ui/MoreSideBar/All" state="$:/state/tab/moresidebar-printify" class="tc-vertical tc-sidebar-tabs-more" explicitState="$:/state/tab/moresidebar-printify"/>
+</div>

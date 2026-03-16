@@ -1,0 +1,58 @@
+caption: Backups
+list-after: $:/plugins/ahahn/tinka/pluginManagement
+tags: $:/tags/tinka/ControlPanel
+title: $:/plugins/ahahn/tinka/backupList
+type: text/vnd.tiddlywiki
+
+\define plugin-export()
+[title[$(currentTiddler)$]]
+\end
+
+\define plugin-icon-title()
+$(currentTiddler)$/icon
+\end
+
+\define plugin-disable-title()
+$:/config/Plugins/Disabled/$(currentTiddler)$
+\end
+
+\define plugin-table-body(type,disabledMessage)
+<div class="tc-plugin-info-chunk tc-plugin-info-icon">
+<$transclude tiddler=<<currentTiddler>> subtiddler=<<plugin-icon-title>>>
+<$transclude tiddler="$:/core/images/plugin-generic-$type$"/>
+</$transclude></div>
+<div class="tc-plugin-info-chunk tc-plugin-info-description" style="flex-grow:1;">
+<$link to={{!!title}}>
+<h1>''<$view field="description"><$view field="title"/></$view>'' $disabledMessage$
+</h1>
+<h2>
+<$view field="title"/>
+</h2>
+<h2>
+<div><em><$view field="version"/></em></div>
+</h2></$link></div>
+<div class="tinka-archive-buttons">
+<$macrocall $name="tinkaExportButton" exportFilter=<<plugin-export>> />
+<$button class="tc-btn-big-green tinka-blue">
+<$tinka-backupPlugin $plugin=<<currentTiddler>> $restore="yes"/>
+<$action-sendmessage $message="tm-modal" $param="$:/plugins/ahahn/tinka/restoreSuccess" />Restore</$button>
+</div>
+<div class="tinka-backup-note">
+''Note'':
+<$edit-text tag="textarea" field="note" class="tinka-full-edit"/>
+</div>
+\end
+
+\define plugin-table(type)
+<$list filter="[!has[draft.of]plugin-type[$type$]sort[description]]" emptyMessage=<<lingo "Empty/Hint">>>
+<div class="tc-plugin-info tinka-backup-info">
+<<plugin-table-body type:"$type$">>
+</div>
+</$list>
+\end
+
+!!Backups
+
+<<plugin-table plugin-backup>>
+<<plugin-table theme-backup>>
+<<plugin-table language-backup>>

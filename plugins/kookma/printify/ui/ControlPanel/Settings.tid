@@ -1,0 +1,19 @@
+caption: Printify
+created: 20250901121726027
+modified: 20250901122932661
+tags: $:/tags/ControlPanel/SettingsTab $:/tags/MoreSideBar
+title: $:/plugins/kookma/printify/ui/ControlPanel/Settings
+type: text/vnd.tiddlywiki
+
+These settings let you customise the behaviour of Printify plugin.
+
+---
+
+;Show Printify setting in more sidebar
+:<$checkbox tiddler="$:/plugins/kookma/printify/ui/ControlPanel/Settings" tag="$:/tags/MoreSideBar"> Show setting in more sidebar</$checkbox>
+
+; Set Printify layout title and subtitle
+:{{$:/plugins/kookma/printify/procedures/setlayoutprops}}
+
+;Create new print profile
+:{{$:/plugins/kookma/printify/procedures/createprofile}}

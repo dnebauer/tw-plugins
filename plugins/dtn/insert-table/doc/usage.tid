@@ -1,0 +1,55 @@
+created: 20190420071759697
+modified: 20190509122003068
+revision: 0
+tags: 
+title: $:/plugins/.dtn/insert-table/usage
+type: text/vnd.tiddlywiki
+
+This plugin provides the <<.def insert-table>> macro which inserts a table whose contents are sourced from a [[dictionary tiddler|DictionaryTiddlers]]. (See [[plugin readme|$:/plugins/.dtn/insert-table/readme]] for further details about the source tiddler and the resulting table output.)
+
+!! Parameters
+
+; source
+
+* Title of dictionary tiddler supplying table content.
+* Required.
+
+; classes
+
+* Space-delimited list of css classes to use in styling the table.
+* Optional. No default value.
+* Plugin provides a config tiddler that can be used with this parameter (see 'Config tiddler' below).
+
+; sort-op
+
+* Sort operator to use for ordering data rows. Is applied to row indexes.
+* Optional. Default: [[nsort[]|nsort Operator]]. (It assumes integer row indexes.)
+* Other potential values: [[sort[]|sort Operator]], [[sortan[]|sortan Operator]], [[sortcs[]|sortcs Operator]], and [[nsortcs[]|nsortcs Operator]].
+* All sort operators can be prepended by <<.param !>> to reverse their normal order.
+* It is not possible to display data rows in the same order they appear in the source dictionary tiddler. This is because the macro uses the [[indexes[]|indexes Operator]] operator for which, according to its documentation, "The list of property names is retrieved from the data tiddler (in no particular order)".
+
+; align
+
+* Horizontal alignment of cell text, defined per column.
+* Optional – omitted from table if field is not present or is empty.
+* Space-delimited list of column alignments; first term = alignment of first column, second term = alignment of second column, etc. Thus, if a user wants to specify the alignment of the third column they will have to specify the alignment of the first and second columns as well.
+* Values that can be used for column alignment are any valid values for the css property <<.param text-align>>. Useful values are //left//, //right//, //center//, and //justify//. (The other valid values are //initial// and //inherit//, neither of which are useful in this context.)
+** Since these values are all single word terms there is no need to enclose them in double square brackets.
+
+!! Config tiddler
+
+As described in the [[plugin readme|$:/plugins/.dtn/insert-table/readme]], table styling is very deliberately separated from table content. Rather than being defined in the source dictionary tiddler, the css classes to apply to a table are specified in the macro call that inserts the table.
+
+This plugin provides a configuration tiddler which can be used to define commonly-used sets of css classes for use with the <<.param classes>> parameter. This configuration tiddler is [[$:/config/plugin/.dtn/insert-table/style-sets]]. The intention is that fields can be created for it that each contain a set of space-separated css classes.
+
+The default version of this tiddler contains a single example field called <<.field borderless-orange>> which contains the following set of css classes: <<.param "table-borderless table-striped-row thead-orange caption-top">>. (These css classes are provided by the [[Shiraz plugin|https://kookma.github.io/Shiraz/#%24%3A%2Fplugins%2F.mr%2Fshiraz plugin]].) The user can edit this field and add additional fields with other sets of css classes.
+
+!! Example macro call
+
+```tid
+<$macrocall $name="insert-table"
+            source="MyTableData"
+            classes={{$:/config/plugin/.dtn/insert-table/style-sets!!borderless-orange}}
+            sort-op="!nsort[]"
+            align="left right center justify"/>
+```

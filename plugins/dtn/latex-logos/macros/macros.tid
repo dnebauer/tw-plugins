@@ -1,0 +1,54 @@
+created: 20190208005739406
+modified: 20190210095044136
+tags: $:/tags/Macro
+title: $:/plugins/.dtn/latex-logos/macros
+type: text/vnd.tiddlywiki
+
+\define tex()
+<span class="logo-tex">T<sub>e</sub>X</span>
+\end
+
+\define latex()
+<span class="logo-latex">L<sup>a</sup></span><<tex>>
+\end
+
+\define pdftex()
+pdf<<tex>>
+\end
+
+\define pdflatex()
+pdf<<latex>>
+\end
+
+\define xetex()
+<span class="logo-xetex">X<sub>e</sub></span><<tex>>
+\end
+
+\define xelatex()
+<span class="logo-xelatex">X<sub>e</sub></span><<latex>>
+\end
+
+\define luatex()
+Lu<span class="logo-luatex-a">a</span><<tex>>
+\end
+
+\define lualatex()
+Lua<<latex>>
+\end
+
+\define miktex()
+~MiK<<tex>>
+\end
+
+\define bibtex()
+B<span class="logo-bibtex-ib">i<span class="logo-bibtex-b">b</span></span><<tex>>
+\end
+
+\define context()
+Co<span class="logo-context-n">n</span><<tex>>t
+\end
+
+
+<!--
+These macros are designed to work with css classes defined in [[$:/plugins/.dtn/latex-logos/stylesheet]]
+-->

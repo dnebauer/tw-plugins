@@ -1,0 +1,17 @@
+created: 20250901121816915
+modified: 20250901123309407
+tags: 
+title: $:/plugins/kookma/printify/procedures/setlayoutprops
+type: text/vnd.tiddlywiki
+
+\procedure set-layout-property(thisField, thisLabel, thisTitle:"", inputTiddler:"")
+<label class="kk-printify-label" title=<<thisTitle>>><$text text=<<thisLabel>>/></label>
+<$keyboard key="escape" actions='<$action-setfield $tiddler=<<inputTiddler>> $field=<<thisField>> />' >
+<$edit-text tiddler=<<inputTiddler>> field=<<thisField>> tag=input default="" placeholder=<<thisTitle>> class="kk-printify-input-txt"/><br>
+</$keyboard>
+\end
+
+
+<!-- The interface -->
+<<set-layout-property thisField:"text" thisLable:"Title of Printify Layout" inputTiddler:"$:/Printify/SiteTitle">>
+<<set-layout-property thisField:"text" thisLable:"SubTitle" inputTiddler:"$:/Printify/SiteSubtitle">>

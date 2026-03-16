@@ -1,0 +1,18 @@
+created: 20150804093256942
+creator: TonGerner
+modified: 20191229190917934
+modifier: TonGerner
+tags: 
+title: $:/plugins/tg/tabstory/settings-help
+
+|Entry |Description |Default |h
+|Toggle tabstory in ~PageControls|Toggle tabstory button in ~PageControls| <input type="checkbox" checked /> |
+|Toggle tabstory in ~ViewToolbar|Toggle tabstory button in ~ViewToolbar| <input type="checkbox"  /> |
+|Background color 'tabs' |Background color of tabs |#E0E0E0 |
+|Hover background color 'tabs' |Background hover color of tabs |#666666 |
+|Font size 'tabs' |Font size of text on tabs | 0.9em |
+|Text color 'tabs' |Text color of tabs |#888888 |
+|Hover text color 'tabs' |Hover text color of tabs |#FFFFFF |
+|Text color '''&times;''' |Text color of '''&times;''' |#CCCCCC |
+|Hover text color '''&times;''' |Hover text color of '''&times;''' |#000000 |
+|Rounded corners 'Breadcrumbs' |Rounded upper corners of breadcrumbs | 3px |

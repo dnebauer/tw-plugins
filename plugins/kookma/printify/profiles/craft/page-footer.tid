@@ -1,0 +1,31 @@
+code-body: yes
+created: 20250903170728506
+modified: 20250903172917786
+profile: craft
+tags: $:/tags/Printify/ProfileStyle
+title: $:/plugins/kookma/printify/profiles/craft/page-footer
+type: text/vnd.tiddlywiki
+
+@page{
+	/* you have set one by one, under @page it seems you cannot set several values at once */
+	@bottom-left {
+		content: "Printed on: <<now>> " /* You can use dynamic date here */;
+		border-top: 2px solid;
+		vertical-align: top;
+		padding-top:10px;
+	}
+
+	@bottom-center {
+		content: "© Your Name or Organization";
+		border-top: 2px solid;
+		vertical-align: top;
+		padding-top:10px;
+	}
+
+	@bottom-right {
+		content: "Page " counter(page) " of " counter(pages);
+		border-top: 2px solid;
+		vertical-align: top;
+		padding-top:10px;
+	}
+}

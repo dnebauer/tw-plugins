@@ -1,0 +1,62 @@
+created: 20191229182635413
+modified: 20191229190103896
+tabs-background-color: #E0E0E0
+tabs-border-radius: 3px
+tabs-font-size: 0.9em
+tabs-hover-background-color: #666666
+tabs-hover-text-color: #FFFFFF
+tabs-text-color: #888888
+tags: $:/tags/Stylesheet
+title: $:/plugins/tg/tabstory/styles
+x-hover-text-color: #000000
+x-text-color: #CCCCCC
+
+<pre>/* STYLES STORYTABS */
+.tc-story-tabs a {
+     white-space: nowrap;
+     display: inline-block;
+}
+
+.story-backdrop a {
+     font-size: {{!!tabs-font-size}};
+     background-color: {{!!tabs-background-color}};
+     padding: 0px 3px;
+     border-left: 1px solid #CCC;
+     border-top: 1px solid #CCC;
+     border-right: 1px solid #CCC;
+     border-bottom: 1px solid #CCC;
+     border-top-left-radius: {{!!tabs-border-radius}};
+     border-top-right-radius: {{!!tabs-border-radius}};
+}
+
+.story-backdrop a:focus {
+     background-color: #F4F4F4;
+     border-bottom: 1px solid #F4F4F4;
+}
+
+.story-backdrop a:hover {
+     color: {{!!tabs-hover-text-color}};
+     background-color: {{!!tabs-hover-background-color}};
+}
+
+.story-backdrop {
+     padding-bottom: 4px;
+     background-color: #FFFFFF
+}
+
+a.tc-tiddlylink {
+     color: {{!!tabs-text-color}};
+}
+
+html .tc-x {
+     font-size: {{!!tabs-font-size}};
+     color: {{!!x-text-color}};
+     margin-left: 4px;
+     margin-right: 10px;
+}
+
+.tc-x:hover {
+     color: {{!!x-hover-text-color}};
+     font-weight: bold;
+}
+</pre>

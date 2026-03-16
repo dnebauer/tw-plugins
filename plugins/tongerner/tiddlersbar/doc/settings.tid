@@ -1,0 +1,28 @@
+caption: Tiddlersbar
+created: 20170325115624509
+creator: TonGerner
+list-after: $:/plugins/tg/layout
+modified: 20221227170057932
+modifier: TonGerner
+order: 7
+tags: $:/tags/plugin-tweaks
+title: $:/plugins/tg/tiddlersbar/settings
+
+!!Tiddlersbar settings
+@@.brown ''Toggle tiddlersbar in ~PageControls''@@<br>
+<$checkbox tiddler="$:/plugins/tg/tiddlersbar/button" tag="$:/tags/PageControls"> Button active</$checkbox>
+
+@@.brown ''Toggle tiddlersbar in ~ViewToolbar ''@@<br>
+<$checkbox tiddler="$:/plugins/tg/tiddlersbar/button" tag="$:/tags/ViewToolbar"> Button active</$checkbox>
+
+<table class="tablestyle">
+<<tableRow "Left 'Tiddlersbar'" "$:/plugins/tg/tiddlersbar/styles" "left-tiddlersbar">>
+<<tableRow "Top 'Tiddlersbar'" "$:/plugins/tg/tiddlersbar/styles" "top-tiddlersbar">>
+<<tableRow "Font size 'Tiddlersbar'" "$:/plugins/tg/tiddlersbar/styles" "tiddlersbar-font-size">>
+<<tableRow "Background color 'Tiddler tabs'" "$:/plugins/tg/tiddlersbar/styles" "tiddlersbar-color">>
+<<tableRow "Text color 'Tiddler tabs'" "$:/plugins/tg/tiddlersbar/styles" "tiddlersbar-text-color">>
+<<tableRow "Background color 'Tiddler tab selected'" "$:/plugins/tg/tiddlersbar/styles" "tiddlersbar-selected-color">>
+<<tableRow "Text color 'Tiddler tab selected'" "$:/plugins/tg/tiddlersbar/styles" "tiddlersbar-selected-text-color">>
+<<tableRow "Rounded corners 'tiddler tabs'" "$:/plugins/tg/tiddlersbar/styles" "tiddlersbar-border-radius">>
+</table>
+<<sldr Help $:/plugins/tg/tiddlersbar/settings-help>>

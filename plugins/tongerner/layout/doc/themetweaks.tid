@@ -1,0 +1,23 @@
+caption: Theme tweaks
+created: 20161212090056554
+modified: 20220202210010230
+order: 2
+tags: $:/tags/plugin-tweaks
+title: $:/plugins/tg/layout/themetweaks
+
+!! Theme tweaks
+
+@@.brown ''Theme tweaks''@@<br>
+excerpt from 'Theme Tweaks' tab
+
+|tablestyle|k
+|<$link to="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">Sidebar layout</$link> |<$select tiddler="$:/themes/tiddlywiki/vanilla/options/sidebarlayout"><option value="fixed-fluid">Fixed story, Fluid sidebar</option><option value="fluid-fixed">Fluid story, Fixed sidebar</option></$select> |
+|<$link to="$:/themes/tiddlywiki/vanilla/metrics/storyleft">Story left position</$link>|^<$edit-text tiddler="$:/themes/tiddlywiki/vanilla/metrics/storyleft" default="" tag="input"/> |
+|<$link to="$:/themes/tiddlywiki/vanilla/metrics/storytop">Story top position</$link>|^<$edit-text tiddler="$:/themes/tiddlywiki/vanilla/metrics/storytop" default="" tag="input"/> |
+|<$link to="$:/themes/tiddlywiki/vanilla/metrics/storyright">Story right</$link>|^<$edit-text tiddler="$:/themes/tiddlywiki/vanilla/metrics/storyright" default="" tag="input"/> |
+|<$link to="$:/themes/tiddlywiki/vanilla/metrics/storywidth">Story width</$link>|^<$edit-text tiddler="$:/themes/tiddlywiki/vanilla/metrics/storywidth" default="" tag="input"/> |
+|<$link to="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth">Tiddler width</$link>|^<$edit-text tiddler="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth" default="" tag="input"/> |
+|<$link to="$:/plugins/tg/layout/sidebar-top">Sidebar top position</$link> |^<$edit-text tiddler="$:/plugins/tg/layout/sidebar-top" default="" tag="input"/> |
+|<$link to="$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth">Sidebar width</$link> |^<$edit-text tiddler="$:/themes/tiddlywiki/vanilla/metrics/sidebarwidth" default="" tag="input"/> |
+
+<<sldr "Help" "$:/plugins/tg/layout/themetweaks-help">>

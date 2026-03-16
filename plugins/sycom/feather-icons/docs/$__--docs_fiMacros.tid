@@ -1,0 +1,29 @@
+title: $:/plugins/sycom/feather-icons/docs/fiMacros
+
+Feather icons plugin has pre-defined macros for an easier usage. May also be an inspiration for yours.
+
+* [[f-i|$:/plugins/sycom/feather-icons/macros/fiMacros]] (icon) will display the `icon` with the `class`. If class are multiple, put them into single `'`, or double quotes `"` ;
+* [[f-i-stack|$:/plugins/sycom/feather-icons/macros/fiMacros]] (icon1 icon2 class scale translate) will  //stack// `icon2` above `icon1` and apply `class` to both. It will apply `scale` and `translate` //transformation// to second icon ;
+* [[list-feather-icons|$:/plugins/sycom/feather-icons/macros/list-icons.js]] is a [[js macro|https://tiddlywiki.com/dev/index.html#JavaScript%20Macros]] used by the icons tab to search in the library. It will display a list of icons matching the `string` parameters ;
+
+!!! Parameters
+
+;icon, icon1, icon2
+: the name of the icon in the [[feather icons library|$:/plugins/sycom/feather-icons/icons]] (and it's extension) ;
+
+;class
+: a css class that will apply to the whole created svg. Some classes are defined within the plugin (see Usage tab) ;
+
+;scale, translate
+: a scale (default "1") and a translate value (default "0 0") for the stacked `icon2`. Passed through the [[transform svg attribute|https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform]] ;
+
+;string
+: some text that will be used to search matching icons names ;
+
+* `<<f-i>> (icon class)` will display the `icon` with the `class`. If class are multiple, put them into single or double quotes `'` , `"`
+*
+* `<<list-feather-icons>> (string)` will display a list of icons corresponding to the `string`
+
+!!! Examples
+
+{{$:/plugins/sycom/feather-icons/docs/fiMacros-examples}}

@@ -1,0 +1,21 @@
+code-body: yes
+created: 20250901120436379
+modified: 20250901120611546
+profile: quick
+tags: $:/tags/Printify/ProfileUI
+title: $:/plugins/kookma/printify/profiles/quick/ui
+type: text/vnd.tiddlywiki
+
+;Switch properties
+:<<switch-property thisIndex:"hide-tiddler-title" thisLabel:"Hide tiddler title">>
+:<<switch-property "hide-tiddler-subtitle" "Hide tiddler subtitle">>
+:<<switch-property "hide-tiddler-tagswrapper" "Hide tiddler tags wrapper">>
+:<<switch-property "hide-tiddler-titleicon" "Hide tiddler title icon">>
+:<<switch-property "add-page-break" "One tiddler per page (add page break)">>
+
+;Set appearance
+: <<set-profile-property thisIndex:"font-family" thisLabel:"Font family">>
+: <<set-profile-property thisIndex:"title-font-size" thisLabel:"Font size">>
+: <<set-profile-property thisIndex:"body-font-size" thisLabel:"Font size for tiddler body">>
+
+<small>Note: Active TiddlyWiki theme settings will be used, if left empty.</small>

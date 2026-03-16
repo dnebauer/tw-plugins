@@ -1,0 +1,22 @@
+title: $:/plugins/sycom/feather-icons/docs/fiMacros-examples
+
+
+```
+<<f-i feather>> icons are pretty nice and easy to use
+```
+<<f-i feather>> icons are pretty nice and easy to use
+
+```
+they may also be displayed <<f-i box 'x3 block'>> on their own line
+```
+they may also be displayed <<f-i box 'x3 block'>> on their own line
+
+```
+And you can stack them! <<f-i-stack search more-horizontal x3 .6 '6 7'>>
+```
+And you can stack them! <<f-i-stack search more-horizontal x3 .6 '6 7'>>
+
+```
+<<list-feather-icons x>>
+```
+<<list-feather-icons x>>

@@ -1,0 +1,9 @@
+tags: $:/tags/Printify/SideBarSegment
+title: $:/plugins/kookma/printify/ui/SideBarSegments/site-title
+type: text/vnd.tiddlywiki
+
+<h1 class="tc-site-title">
+
+<$transclude tiddler="$:/Printify/SiteTitle" mode="inline"/>
+
+</h1>

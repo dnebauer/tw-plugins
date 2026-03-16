@@ -1,0 +1,20 @@
+title: $:/plugins/sycom/feather-icons/usage
+caption: Usage
+
+Once plugin is installed, you can call any icon of the library using its name. See //Icons// for the full list. Some classes are ready to go :
+
+* `x2`, `x3`, `x5`, `x11` will increase the icon size
+* `thin` will force the stroke line to be... ...thin
+* `block` will treat your icon as a block and have its own paragraph (defaultly icons are inline block)
+
+!!! hard coding your svg sprites call
+
+```
+<svg class="feather class" style="your_styles"><use href="#name_of_your_icon" /></svg>
+```
+
+!!! using integrated macros
+
+Feather icons plugin has predefined //macros// as shown with below examples. See the [[macros|$:/plugins/sycom/feather-icons/macros/fiMacros]] tiddler for full documentation.
+
+{{$:/plugins/sycom/feather-icons/docs/fiMacros-examples}}

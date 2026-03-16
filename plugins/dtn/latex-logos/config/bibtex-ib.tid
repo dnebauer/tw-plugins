@@ -1,0 +1,27 @@
+created: 20190210025612757
+font-size: 0.8em
+margin-right: -0.15em
+modified: 20190210073055665
+title: $:/config/plugin/.dtn/latex-logos/bibtex-ib
+type: text/vnd.tiddlywiki
+
+!! Configuration tiddler for the latex-logos plugin
+
+In the <<bibtex>> logo:
+
+* Reduce the size of ''IB''
+* Move the ''T'' closer to the ''IB''.
+
+This is done by adjusting the following css properties:
+
+; font-size
+: Default: 0.8em
+: Increase the positive value to make the font larger
+: Decrease the positive value to make the font smaller
+
+; margin-right
+: Default: -0.15em
+: Increase the negative value to move the 'T' closer to the 'IB'
+: Decrease the negative value to move the 'T' further from the 'IB'
+
+The plugin uses the field values attached to this tiddler. They can be adjusted directly or via the plugin information tiddler [[$:/plugins/.dtn/latex-logos/config]].

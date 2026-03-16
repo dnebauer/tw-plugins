@@ -1,0 +1,16 @@
+{
+    "title": "$:/plugins/kookma/favorites",
+    "version": "4.9.1",
+    "stability": "STABILITY_2_STABLE",
+    "name": "Favorites",
+    "description": "Create favorites, organize in folders",
+    "author": "Mohammad Rahmani",
+    "source": "https://github.com/kookma/TW-Favorites",
+    "list": "readme license history",
+    "plugin-priority": "",
+    "parent-plugin": "",
+    "dependents": "",
+    "plugin-type": "plugin",
+    "core-version": ">=5.3.5",
+    "packaged-by": "Gatha on 8th December 2025, 19:44:10"
+}

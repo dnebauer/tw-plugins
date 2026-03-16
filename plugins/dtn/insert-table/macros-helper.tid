@@ -1,0 +1,52 @@
+created: 20190317111849507
+modified: 20190514095852379
+revision: 0
+tags: 
+title: $:/plugins/.dtn/insert-table/macros-helper
+type: text/vnd.tiddlywiki
+
+\define __insert-table_all-classes()
+$(classes)$ $(uuid-class)$
+\end
+\define __insert-table()
+<!-- COLUMN ALIGNMENT (optional) -->
+<style>
+<$set filter="[inserttableenlist[$(align)$]count[]]" name="alignCount">
+<$list filter="[range<alignCount>]" variable="alignIndex">
+.$(uuid-class)$ tr th:nth-child(<<alignIndex>>) { text-align: <$text text={{{ [inserttableenlist[$(align)$]nth<alignIndex>] }}}/>; }
+.$(uuid-class)$ tr td:nth-child(<<alignIndex>>) { text-align: <$text text={{{ [inserttableenlist[$(align)$]nth<alignIndex>] }}}/>; }
+</$list>
+</$set>
+</style>
+<!-- STYLE CLASSES (optional) -->
+<table class="$(all-classes)$">
+<!-- CAPTION (optional) -->
+<$list filter="[<source>get[table-caption]]" variable="tableCaption">
+<caption><$text text=<<tableCaption>>/></caption>
+</$list>
+<!-- HEADER ROW (optional) -->
+<$list filter="[<source>get[column-headings]]" variable="headingsField">
+<thead>
+<tr>
+<$list filter="[enlist<headingsField>]" variable="heading">
+<td><<heading>></td>
+</$list>
+</tr>
+</thead>
+</$list>
+<!-- DATA ROWS (required) -->
+<tbody>
+<$set name="filter" value="[<source>indexes[]$(sort-op)$]">
+<$list filter=<<filter>> variable="rowIndex" emptyMessage="<tr><td>***NO TABLE DATA***</td></tr>">
+<tr>
+<$set name="rowCells" tiddler=<<source>> index=<<rowIndex>> >
+<$list filter="[inserttableenlist<rowCells>]" variable="cell" emptyMessage="<td>***NO ROW DATA***</td>">
+<td><<cell>></td>
+</$list>
+</$set>
+</tr>
+</$list>
+</$set>
+</tbody>
+</table>
+\end

@@ -1,0 +1,17 @@
+created: 20190317111849507
+modified: 20190514095852379
+revision: 0
+tags: $:/tags/Macro
+title: $:/plugins/.dtn/insert-table/macros
+type: text/vnd.tiddlywiki
+
+\define insert-table(source classes sort-op:"nsort[]" align)
+\import [[$:/plugins/.dtn/insert-table/macros-helper]]
+<$vars source="$source$" classes="$classes$" sort-op="$sort-op$" align="$align$">
+<$set name="uuid-class" value=<<__insert-table_uuid>> >
+<$set name="all-classes" value=<<__insert-table_all-classes>> >
+<<__insert-table>>
+</$set>
+</$set>
+</$vars>
+\end

@@ -1,0 +1,20 @@
+created: 20220202133942158
+modified: 20220228155319383
+tags: $:/tags/Stylesheet
+title: $:/plugins/tg/layout/sticky-editor-toolbar
+type: text/vnd.tiddlywiki
+
+<pre>.tc-tiddler-preview {
+     overflow: visible;
+}
+.tc-editor-toolbar {
+     position: -webkit-sticky;
+     position: -moz-sticky;
+     position: -o-sticky;
+     position: -ms-sticky;
+     position: sticky;
+     top: calc({{$:/plugins/tg/layout/styles!!topbar-height}} + 40px);
+     background: <<colour tiddler-background>>;
+     z-index: 500;
+}
+</pre>

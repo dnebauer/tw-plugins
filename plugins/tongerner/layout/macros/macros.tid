@@ -1,0 +1,29 @@
+code-body: yes
+created: 20220202190708213
+modified: 20230103200520656
+tags: $:/tags/Macro
+title: $:/plugins/tg/layout/macros
+
+\define icn(icon)
+<button class="tc-btn-invisible"> {{$icon$}}</button>
+\end
+
+\define sldr(label tiddler class)
+<$set name="revealState" value=<<qualify "$:/state/$tiddler$">>>
+  <$reveal type="nomatch" state=<<revealState>> text="yes">
+    <$button class="tc-btn-invisible tgc-slider" set=<<revealState>> setTo="yes">
+      $label$ &#x25B7;
+    </$button>
+  </$reveal>
+  <$reveal type="match" state=<<revealState>> text="yes">
+    <$button class="tc-btn-invisible tgc-slider" set=<<revealState>> setTo="no">
+      $label$ &#x25BD;
+    </$button>
+  </$reveal>
+<$reveal type="match" state=<<revealState>> text="yes">
+<div class="$class$">
+<$transclude tiddler="$tiddler$" mode="block" />
+</div>
+</$reveal>
+</$set>
+\end

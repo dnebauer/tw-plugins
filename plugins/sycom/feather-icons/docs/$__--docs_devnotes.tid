@@ -1,0 +1,35 @@
+title: $:/plugins/sycom/feather-icons/docs/devnotes
+caption: notes
+
+//This tiddler contains notes from and for development purpose. It intends to be concise and a complement for [[$:/plugins/sycom/feather-icons]] which describes the plugin for the users.//
+
+!! Fundamentals
+
+The plugin uses the sprite version of the feather icons library. So it is easy to update. Some tweaks are good to know.
+
+* don't forget to add `id: "feather-icons"` to the root svg element of the imported svg sprite file (''./lib/feather-sprite.svg'') ;
+* the official feather icons library is extended by the //extended one// ''./lib/feather-ext.svg''. Don't forget to check consistency between them when updating ;
+* the svg sprite tiddlers are tagged `$:/tags/RawMarkup` in order to be loaded at wiki load ;
+* as feather icons have a //wireframe// style, some CSS tweaks are needed in the ''feather.css.tid'' file. This stylesheet also contains useful styles for the plugin and the macros ;
+* as TiddlyWiki uses positioning with //em// values, stacked icons may have unpredictible behaviours. The viewBox attribute is the fix ;
+* on mobile, search field will always begin with UpperCase, reason why the string query is processed with `toLowerCase` ;
+
+!! Roadmap
+
+# update regularly the plugin library ;
+# transform list-icons js macro into a TiddlyWiki macro ;
+
+!! Rules
+
+# The plugin should remain as lightweight as possible (for now less than 80 ko as a //.tid//) ;
+# The extended library will not expand too much. ''feather icons'' plugin is the name ;
+
+!! Plugin tree
+
+<<tree $:/plugins/sycom/feather-icons/>>
+
+!! References and tools
+
+* [[feather icons|https://feathericons.com/]] website and the associated repository ;
+* [[SVGOMG|https://svgomg.net/]] a very remarkable and useful online tool for reducing svg designs ;
+* [[Inkscape|https://inkscape.org]] is a very good svg drawing open source software ;

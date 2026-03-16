@@ -1,0 +1,9 @@
+created: 20200314154755381
+modified: 20200314172011820
+tags: 
+title: $:/plugins/tg/layout/settings-toolbar-up-help
+
+|Entry |Description |Default |h
+|Spacing title &harr; toolbar |Space between toolbar and title of tiddler | 1.3em |
+|Size of tiddler buttons |Size of tiddler buttons | 0.6em |
+|Button spacing 'Tiddler toolbar' |Spacing between buttons of tiddler toolbar | 0px |

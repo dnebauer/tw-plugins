@@ -1,0 +1,7 @@
+created: 20200916190155341
+list-after: $:/core/ui/ViewTemplate/body
+modified: 20200916192221213
+tags: 
+title: $:/plugins/tg/layout/fields
+
+{{$:/core/ui/EditTemplate/fields}}

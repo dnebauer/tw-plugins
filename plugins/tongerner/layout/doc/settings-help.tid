@@ -1,0 +1,43 @@
+created: 20150801124528672
+creator: TonGerner
+modified: 20220202203901575
+modifier: TonGerner
+tags: 
+title: $:/plugins/tg/layout/settings-help
+
+|Layout tweaks |<|<|<|h
+|Item|Entry |Description |Default |h
+|'Adjust layout' button |<input type="checkbox" /> / <input type="checkbox" checked />|'Adjust layout' button in Toprightbar| <input type="checkbox" checked /> |
+|'Search above story river' |<input type="checkbox" /> / <input type="checkbox" checked />|Advanced search above story river&nbsp;^^''1''^^| <input type="checkbox" /> |
+|Toolbar 'toggle editortoolbar/preview' |<input type="checkbox" /> / <input type="checkbox" checked />|Toolbar - in edit mode - below tags| <input type="checkbox" checked /> |
+|Sort recent results alphabetical |<input type="checkbox" /> / <input type="checkbox" checked />|Sort recent results each day in alphabetical order| <input type="checkbox" checked /> |
+|'Button to top of story river' |<input type="checkbox" /> / <input type="checkbox" checked />|Button to jump to top of story river| <input type="checkbox" checked /> |
+|'Hide description Tools tab buttons' |<input type="checkbox" /> / <input type="checkbox" checked />|Hide decriptions next to buttons under Tools tab| <input type="checkbox" checked /> |
+|'System tags tab' |<input type="checkbox" /> / <input type="checkbox" checked />|Add a System tags tab| <input type="checkbox" checked /> |
+|'Recent dates bold' |<input type="checkbox" /> / <input type="checkbox" checked />|Show dates in recent tab bold| <input type="checkbox" checked /> |
+|Sticky 'titles'|<input type="checkbox" /> / <input type="checkbox" checked />|Causes tiddler titles to "stick" to the top ^^''2''^^| <input type="checkbox" checked /> |
+|Sticky 'editor toolbar'|<input type="checkbox" /> / <input type="checkbox" checked />|Causes editor toolbar to "stick" to the top ^^''2''^^| <input type="checkbox" checked /> |
+|Set tiddler toolbar above the tiddler title|<input type="checkbox" /> / <input type="checkbox" checked />|Creates more room for tiddler title ^^''3''^^| <input type="checkbox" /> |
+|View mode extensions ^^''4''^^|<|<|<|h
+|Tagging in view mode|<input type="checkbox" /> / <input type="checkbox" checked />|Adds the tag picker in view mode| <input type="checkbox" /> |
+|Field handling in view mode|<input type="checkbox" /> / <input type="checkbox" checked />|Adds adding /editing fields in view mode| <input type="checkbox" /> |
+|Setting type in view mode|<input type="checkbox" /> / <input type="checkbox" checked />|Adds  setting type in view mode| <input type="checkbox" /> |
+
+|Top bar / tiddler / button color|<|<|<|h
+|Item |Entry |Description |Default |h
+|''Topbar'' |Background color 'Top bar'|Background color of the top bar<br>Transparent when left 'blank'!| `<<colour page-background>>` |
+|~|Height 'Top bar'|Height of the top bar| 40px |
+|''Tiddler'' |Top padding |Top padding of tiddler  | 30px |
+|''Button color''|Active button color |Color indicating 'active' state of toggle button | `<<colour primary>>` |
+
+
+|borderless|k
+|^''@@font-size: 0.8em;1@@'' |&nbsp;&nbsp;|&bull; In classic storyview: scroll up to reach search<br>&bull; In zoomin view search always visible|
+|^''@@font-size: 0.8em;2@@'' ||Sticky titles & sticky editor toolbar compensate for height of 'Top bar'|
+|^''@@font-size: 0.8em;3@@'' ||Adds 'Toolbar - title' tab to Plugin tweaks with settings for layout of tiddler toolbar|
+|^''@@font-size: 0.8em;4@@'' ||You can reorder these entries by clicking <<tag $:/tags/ViewTemplate>> + drag & drop|
+
+
+
+
+

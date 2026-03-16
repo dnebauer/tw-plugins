@@ -1,0 +1,28 @@
+caption: Tabstory
+created: 20160111172043170
+creator: TonGerner
+modified: 20221228112312156
+modifier: TonGerner
+order: 8
+tags: $:/tags/plugin-tweaks
+title: $:/plugins/tg/tabstory/settings
+
+!!~TabStory settings
+@@.brown ''Toggle tabstory in ~PageControls''@@<br>
+<$checkbox tiddler="$:/plugins/tg/tabstory/button" tag="$:/tags/PageControls"> Button active</$checkbox>
+
+@@.brown ''Toggle tabstory in ~ViewToolbar ''@@<br>
+<$checkbox tiddler="$:/plugins/tg/tabstory/button" tag="$:/tags/ViewToolbar"> Button active</$checkbox>
+
+<table class="tablestyle">
+<<tableRow "Background color 'tabs'" "$:/plugins/tg/tabstory/styles" "tabs-background-color">>
+<<tableRow "Hover background color 'tabs'" "$:/plugins/tg/tabstory/styles" "tabs-hover-background-color">>
+<<tableRow "Font size 'tabs'" "$:/plugins/tg/tabstory/styles" "tabs-font-size">>
+<<tableRow "Text color 'tabs'" "$:/plugins/tg/tabstory/styles" "tabs-text-color">>
+<<tableRow "Hover text color 'tabs'" "$:/plugins/tg/tabstory/styles" "tabs-hover-text-color">>
+<<tableRow "Text color 'x'" "$:/plugins/tg/tabstory/styles" "x-text-color">>
+<<tableRow "Hover text color 'x'" "$:/plugins/tg/tabstory/styles" "x-hover-text-color">>
+<<tableRow "Rounded corners 'tabs'" "$:/plugins/tg/tabstory/styles" "tabs-border-radius">>
+</table>
+<<sldr Help $:/plugins/tg/tabstory/settings-help>>
+

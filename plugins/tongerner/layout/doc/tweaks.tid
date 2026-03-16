@@ -1,0 +1,15 @@
+caption: Plugin tweaks
+created: 20150801100456266
+creator: TonGerner
+modified: 20221226202402342
+modifier: TonGerner
+status: yes
+tags: $:/tags/ControlPanel/Appearance
+title: $:/plugins/tg/layout/tweaks
+up: no
+
+The general layout adjustments can be found under the 'Theme tweaks' and 'Layout tweaks' tabs. Dependent on installed plugins other tabs are available ('Top menu', 'Top-left menu', 'Top toolbar', 'Tiddlersbar, '~TabStory', 'Uptoolbar', 'Tristate').
+
+> @@color:red; ''In case you come here via Control panel > Appearance > Plugin tweaks, 'Layout tweaks' will have a 'distorted' layout.   Click {{$:/plugins/tg/layout/configuration-button}} to display this tiddler in a new window and 'Layout tweaks' will be shown better.''@@
+
+<<tabs "[all[shadows+tiddlers]tag[$:/tags/plugin-tweaks]nsort[order]]" "$:/plugins/tg/layout/settings" "" "tc-vertical">>

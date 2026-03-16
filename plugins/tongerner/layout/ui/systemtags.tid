@@ -1,0 +1,14 @@
+caption: System tags
+created: 20170323185212447
+creator: TonGerner
+list-after: $:/core/ui/MoreSideBar/Tags
+modified: 20200310172011553
+modifier: TonGerner
+tags: $:/tags/MoreSideBar
+title: $:/plugins/tg/layout/systemtags
+
+<$list filter="[all[shadows+tiddlers]tags[]is[system]sort[title]]">
+
+<$transclude tiddler="$:/core/ui/TagTemplate"/> <small class="tc-menu-list-count"><$count filter="[all[current]tagging[]]"/></small>
+
+</$list>

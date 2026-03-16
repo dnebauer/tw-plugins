@@ -1,0 +1,14 @@
+{
+    "title": "$:/plugins/tg/tiddlersbar",
+    "author": "TonGerner",
+    "core-version": ">=5.1.15",
+    "created": "20191228205111942",
+    "description": "Tiddlersbar",
+    "list": "readme license",
+    "modified": "20201227184150985",
+    "name": "Tiddlersbar",
+    "plugin-type": "plugin",
+    "source": "http://www.tongerner.nl/TW5/TW5_index.html",
+    "tags": "",
+    "version": "0.0.22"
+}

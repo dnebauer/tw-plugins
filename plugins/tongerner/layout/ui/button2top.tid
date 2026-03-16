@@ -1,0 +1,17 @@
+created: 20180304212804838
+creator: TonGerner
+list-after: $:/plugins/tg/layout/styles
+modified: 20220202133541230
+modifier: TonGerner
+tags: $:/tags/PageTemplate
+title: $:/plugins/tg/layout/button2top
+
+<div class="tgc-fixed-bottom">
+<$button class="tc-btn-invisible tgc-button-color" tooltip="To top">
+{{$:/plugins/tg/layout/images/top}}
+<$list variable='Target' filter='[list[$:/StoryList]first[]]'>
+<$action-navigate $to=<<Target>>/>
+</$list>
+</$button>
+</div>
+

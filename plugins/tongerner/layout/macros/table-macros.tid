@@ -1,0 +1,19 @@
+code-body: yes
+created: 20150801122014492
+creator: TonGerner
+modified: 20230824105757357
+modifier: TonGerner
+tags: $:/tags/Macro
+title: $:/plugins/tg/layout/table-macros
+
+\define inputBox() <$edit-text tiddler="$(reftarget)$" field="$(reffield)$" class="$(refclass)$"/>
+
+\define tableRow(header,target,field,class)
+<$set name="reftarget" value="$target$">
+<$set name="reffield" value="$field$">
+<$set name="refclass" value="settings">
+<tr><th>$header$ </th><td><<inputBox>></td></tr>
+</$set>
+</$set>
+</$set>
+\end

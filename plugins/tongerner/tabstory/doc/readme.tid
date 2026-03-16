@@ -1,0 +1,14 @@
+created: 20150803183926248
+creator: TonGerner
+modified: 20221228112059292
+modifier: TonGerner
+title: $:/plugins/tg/tabstory/readme
+
+Alternative to my [[Tiddlersbar plugin|http://www.tongerner.nl/TW5/TW5_playground.html]], based on the work of [[Rich Rath (rcrath)|https://github.com/rcrath/TW5-TabStory/issues]].<br>
+Here the 'breadcrumbs' are on top of the story-river. It works best in Zoomin view.
+
+<<<
+''Note:''<br>''This plugin needs my $:/plugins/tg/layout plugin for general layout settings (available at http://www.tongerner.nl/TW5/TW5_playground.html).''
+<<<
+
+Settings for the layout can be found in ''~ControlPanel > Appearance > [[Plugin tweaks|$:/plugins/tg/layout/tweaks]]''.

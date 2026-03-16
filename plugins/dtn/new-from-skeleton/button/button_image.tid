@@ -1,0 +1,16 @@
+created: 20190118104453828
+modified: 20190503174411363
+tags: $:/tags/Image
+title: $:/plugins/.dtn/new-from-skeleton/button/image
+type: text/vnd.tiddlywiki
+
+<svg class="tgc-new-template-button tc-image-button" viewBox="0 0 22 22" width="22pt" height="22pt" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+ <g>
+  <title>Layer 1</title>
+  <rect height="3.18427" width="11.84691" id="e1_rectangle" y="17.06573" x="10.02809"/>
+  <rect id="e2_rectangle" height="3.18427" width="11.82083" y="1.625" x="10"/>
+  <rect transform="matrix(0.03696432039320857,0,0,0.06008064622899197,61.76691469018027,72.69297278575596) " id="e4_rectangle" height="53" width="264" y="-1052.87631" x="-1343.80504"/>
+  <rect id="e5_rectangle" transform="matrix(0.03696432039320857,0,0,0.06008064622899197,61.76691469018027,72.69297278575596) " height="53" width="264" y="-1053.87631" x="-1663.22788"/>
+  <rect id="e6_rectangle" transform="matrix(0.00003294807490963891,0.040680485400358,-0.0537343780992714,0.00005355276385491953,82.7917997491252,94.38851470356855) " height="53" width="264" y="1414.59029" x="-2185.64586"/>
+ </g>
+</svg>

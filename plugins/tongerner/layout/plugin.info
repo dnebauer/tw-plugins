@@ -1,0 +1,13 @@
+{
+    "created": "20191227185336422",
+    "version": "0.5.13",
+    "title": "$:/plugins/tg/layout",
+    "source": "http://www.tongerner.nl/TW5/TW5_index.html",
+    "plugin-type": "plugin",
+    "name": "Layout tweaks",
+    "modified": "20230807160125517",
+    "list": "readme license",
+    "description": "Layout tweaks",
+    "core-version": ">=5.2.2",
+    "author": "TonGerner"
+}

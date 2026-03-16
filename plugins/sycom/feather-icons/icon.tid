@@ -1,0 +1,7 @@
+title: $:/plugins/sycom/feather-icons/icon
+tags: $:/tags/Image
+
+\parameters (size:"22pt")
+<svg width=<<size>> height=<<size>> viewBox="0 0 24 24" class="tc-image-plugin-sycom-feather_icons tc-image-feather-icons tc-image-button">
+<use href="#hexagon" />
+<use href="#feather" transform-origin="12 12" transform="scale(.6)" /></svg>

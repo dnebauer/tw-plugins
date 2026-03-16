@@ -1,0 +1,18 @@
+created: 20170325115648290
+creator: TonGerner
+modified: 20191230170358959
+modifier: TonGerner
+tags: 
+title: $:/plugins/tg/tiddlersbar/settings-help
+
+|Item |Description |Default |h
+|Toggle tiddlersbar in ~PageControls |'Toggle tiddlersbar' button in ~PageControls| <input type="checkbox" checked /> |
+|Toggle tiddlersbar in ~ViewToolbar |'Toggle tiddlersbar' button in ~ViewToolbar| <input type="checkbox" /> |
+|Left 'Tiddlersbar'  |Start (from the left) of the Tiddlersbar| 42px |
+|Top 'Tiddlersbar' |Start (from the top) of the Tiddlersbar| 10px |
+|Font size 'Tiddlersbar' |Font size of Tiddlersbar | 0.9em |
+|Background color 'Tiddler tabs' |Background color of breadcrumbs | `<<colour tab-background>>` |
+|Text color 'Tiddler tabs' |Text color of tiddler tabs | `<<colour tab-foreground>>` |
+|Background color 'Tiddler tab selected' |Background color of selected tiddler tab| `<<colour tab-background-selected>>` |
+|Text color 'Tiddler tab selected' |Text color of selected tiddler tab | `<<colour tab-foreground-selected>>` |
+|Rounded corners 'tiddler tabs' |Rounded corners of tiddlersbar | 1px |

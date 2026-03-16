@@ -1,0 +1,9 @@
+created: 20190509105112242
+modified: 20190509121158569
+revision: 0
+tags: 
+title: $:/plugins/.dtn/insert-table/credits
+type: text/vnd.tiddlywiki
+
+; Stephan Hradek
+: <div>This plugin uses an internal macro based on the "uuid" macro by Stephan Hradek ([[Skeeve|https://github.com/Skeeve]]) which can be obtained from his [[Skeeve's TiddlyStuff|http://tiddlystuff.tiddlyspot.com/#UUIDmacro]] site.

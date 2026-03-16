@@ -1,0 +1,51 @@
+caption: Layout tweaks
+created: 20150729190109349
+creator: TonGerner
+modified: 20220305175337899
+modifier: TonGerner
+order: 3
+sticky: yes
+tags: $:/tags/plugin-tweaks
+title: $:/plugins/tg/layout/settings
+up: yes
+
+!!Layout tweaks
+
+|Layout tweaks |<|h
+|<$checkbox tiddler="$:/plugins/tg/layout/configuration-button" tag="$:/tags/TopRightBar"> 'Adjust layout' button</$checkbox>|<<icn $:/plugins/tg/layout/images/layout>>|
+|<$checkbox tiddler="$:/plugins/tg/layout/search" tag="$:/tags/AboveStory"> 'Search above story river'</$checkbox>|<|
+|<$checkbox tiddler="$:/plugins/tg/layout/toggle_toolbar" tag="$:/tags/EditTemplate"> Toolbar 'Toggle editortoolbar/preview'</$checkbox>|<|
+|<$checkbox tiddler="$:/plugins/tg/layout/timeline-macro" tag="$:/tags/Macro"> 'Sort recent alphabetical'</$checkbox>|<|
+|<$checkbox tiddler="$:/plugins/tg/layout/button2top/style" tag="$:/tags/Stylesheet"> 'Button to top of story river'</$checkbox>|<|
+|<$checkbox tiddler="$:/plugins/tg/layout/tools/style" tag="$:/tags/Stylesheet"> 'Hide description Tools tab buttons'</$checkbox>|<|
+|<$checkbox tiddler="$:/plugins/tg/layout/systemtags" tag="$:/tags/MoreSideBar"> 'System tags tab'</$checkbox>|<|
+|<$checkbox tiddler="$:/plugins/tg/layout/recent-dates-bold/style" tag="$:/tags/Stylesheet"> 'Recent dates bold'</$checkbox>|<|
+|<$checkbox tiddler="$:/themes/tiddlywiki/vanilla/options/stickytitles" field="text" checked="yes" unchecked="no" default="yes"> Sticky 'titles'</$checkbox>|<|
+|<$checkbox tiddler="$:/plugins/tg/layout/sticky-editor-toolbar" tag="$:/tags/Stylesheet"> Sticky 'editor toolbar'</$checkbox>|<|
+|{{$:/plugins/tg/layout/toolbar-up/ckeckbox}}|<|
+|||
+|||
+|View mode extensions |<|h
+|<$checkbox tiddler="$:/core/ui/EditTemplate/tags" tag="$:/tags/ViewTemplate">  Tagging in view mode</$checkbox>|If checked, reorder via<br><<tag $:/tags/ViewTemplate>>|
+|{{$:/plugins/tg/layout/field-handling-checkbox}}|~|
+|<$checkbox tiddler="$:/core/ui/EditTemplate/type" tag="$:/tags/ViewTemplate"> Setting type in view mode</$checkbox>|~|
+
+
+<table class="tablestyle">
+@@.brown ''Top bar''@@
+<<tableRow "Background color 'Top bar'" "$:/plugins/tg/layout/styles" "topbar-background-color">>
+<<tableRow "Height 'Top bar'" "$:/plugins/tg/layout/styles" "topbar-height">>
+@@.brown ''Tiddler''@@
+<<tableRow "Top padding" "$:/plugins/tg/layout/styles" "tiddler-padding-top">>
+@@.brown ''Button color''@@
+<<tableRow "Active button color" "$:/plugins/tg/layout/styles" "active-state-color">>
+</table>
+
+<<<
+''Note:''
+
+* @@color:red;For a 'Top bar' to become visible, a ''color'' (and a ''height > 0px'') need to be entered!@@
+* The height of the Top bar is also the offset for sticky titles and sticky editor toolbar (the editor toolbar gets an extra 40px offset}
+<<<
+
+<<sldr "Help" "$:/plugins/tg/layout/settings-help">>

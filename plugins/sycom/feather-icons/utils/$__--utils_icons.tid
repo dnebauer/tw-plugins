@@ -1,0 +1,8 @@
+title: $:/plugins/sycom/feather-icons/icons
+caption: Icons
+
+Here is the Feather icons list.
+
+<div style="text-align:center"><$edit-text tag="input" tiddler="$:/temp/searchFeatherIcons" placeholder="Find yours" /></div>
+
+<$macrocall $name=list-feather-icons string={{$:/temp/searchFeatherIcons}}>>

@@ -1,0 +1,9 @@
+created: 20190210092759716
+modified: 20190210093646305
+tags: 
+title: $:/plugins/.dtn/latex-logos/credits
+type: text/vnd.tiddlywiki
+
+This plugin is based on a blog posting by Theresa O’Connor from 22 August 2007: [[TEX and LATEX logo POSHlets|http://tess.oconnor.cx/2007/08/tex-poshlet]]. As such, the plugin shares the same license.
+
+This [[Stack Overflow answer|https://stackoverflow.com/a/20563084]] by [[Jukka K. Korpela|https://stackoverflow.com/users/1084437/jukka-k-korpela]] provided the technique for reversing the 'E' in <<xetex>> and <<xelatex>>.

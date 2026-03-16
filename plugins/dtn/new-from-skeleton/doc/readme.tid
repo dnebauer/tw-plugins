@@ -1,0 +1,29 @@
+created: 20190118100926205
+modified: 20190503180914825
+tags: 
+title: $:/plugins/.dtn/new-from-skeleton/readme
+type: text/vnd.tiddlywiki
+
+This plugin adds the following button to the View Toolbar:
+
+{{$:/plugins/.dtn/new-from-skeleton/button/image}}
+
+When pressed, it creates a draft tiddler based on the skeleton tiddler [[$:/config/plugins/.dtn/new-from-skeleton/skeleton]].
+
+Edit the skeleton tiddler from time to time as desired.
+
+!!! Configure button location in View Toolbar (optional)
+
+To configure where the button appears in the toolbar, edit the //list// field in the `$:/tags/ViewToolbar` tiddler. This is not an entirely intuitive process -- it involves:
+
+* Opening the advanced search dialog (click the magnifying glass icon next to the search field),
+* Selecting 'Shadows' tab,
+* Entering `$:/tags/ViewToolbar` in the advanced search field,
+* Clicking on the exactly matching result, i.e., `$:/tags/ViewToolbar` rather than `SystemTag: $:/tags/ViewToolbar`, to open the tiddler,
+* Clicking on the 'Edit this tiddler' icon to open the tiddler for editing,
+* Locating the //list// field, and
+* Adding [[$:/plugins/.dtn/new-from-skeleton/button]] to the appropriate place in the list.
+
+!!! Tiddler naming
+
+The tiddlers in this plugin do not follow the standard naming conventions for core ui buttons. Instead, the tiddler naming conventions for plugins are followed, e.g., except for configuration plugins the tiddlers have the name stem `$:/plugins/.dtn/new-from-skeleton/`.

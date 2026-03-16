@@ -1,0 +1,6 @@
+created: 20200619121347163
+modified: 20200619121610153
+tags: 
+title: $:/plugins/tg/layout/field-handling-checkbox
+
+<$checkbox tiddler="$:/plugins/tg/layout/field-handling" tag="$:/tags/ViewTemplate">  Field handling in view mode</$checkbox>

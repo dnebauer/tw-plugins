@@ -1,0 +1,8 @@
+created: 20150731184520854
+creator: TonGerner
+modified: 20191216153308624
+modifier: TonGerner
+tags: $:/tags/PageTemplate
+title: $:/plugins/tg/layout/topbar
+
+<div class="tgc-toolbar tc-adjust-top-of-scroll"></div>

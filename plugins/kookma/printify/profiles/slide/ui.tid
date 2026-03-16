@@ -1,0 +1,19 @@
+code-body: yes
+created: 20250901120626652
+modified: 20250901120732983
+profile: slide
+tags: $:/tags/Printify/ProfileUI
+title: $:/plugins/kookma/printify/profiles/slide/ui
+type: text/vnd.tiddlywiki
+
+;Set appearance
+: <<set-profile-property thisIndex:"font-family" thisLabel:"Font family">>
+: <<set-profile-property thisIndex:"title-font-size" thisLabel:"Font size">>
+: <<set-profile-property thisIndex:"body-font-size" thisLabel:"Font size for tiddler body">>
+
+<small>Note: Active TiddlyWiki theme settings will be used, if left empty.</small>
+
+;Set page properties
+: <<set-profile-property thisIndex:"page-size" thisLabel:"Page size and orientation">>
+: <<set-profile-property thisIndex:"page-margin" thisLabel:"Page margin">>
+

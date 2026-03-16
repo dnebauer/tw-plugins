@@ -1,0 +1,44 @@
+created: 20190210024315106
+font-size: 1em
+margin-left: -0.125em
+margin-right: 0em
+modified: 20190210075247408
+tags: LatexLogosPlugin
+title: $:/config/plugin/.dtn/latex-logos/xelatex-ɘ
+type: text/vnd.tiddlywiki
+vertical-align: 0.1ex
+
+!! Configuration tiddler for the latex-logos plugin
+
+In the <<xelatex>> logo:
+
+* Override shrinking of the subscripted ''Ǝ''
+* Move the ''Ǝ'' closer to both the preceding ''X'' and following ''L''
+* Adjust the vertical position of the ''Ǝ''
+
+This is done by adjusting the following css properties:
+
+; font-size
+: Default: 1em
+: Increase the positive value to make the font larger
+: Decrease the positive value to make the font smaller
+
+; margin-left
+: Default: -0.125em
+: Increase the negative value to move the 'Ǝ' closer to the 'X'
+: Decrease the negative value to move the 'Ǝ' further from the 'X'
+
+; margin-right
+: Shift closer to following 'T'
+: Default: 0em
+: Increase the negative value to move the 'L' closer to the 'Ǝ'
+: Decrease the negative value to move the 'L' further from the 'Ǝ'
+
+; vertical-align
+: Default: 0.1ex
+: Increasing a positive value moves the 'Ǝ' further upward from it default position
+: Increasing a negative value moves the 'Ǝ' further downward from its default position
+
+Note: the default property values are the same for the 'Ǝ' in 'XƎLATEX' except that there is more space between 'ƎL' than 'ƎT'.
+
+The plugin uses the field values attached to this tiddler. They can be adjusted directly or via the plugin information tiddler [[$:/plugins/.dtn/latex-logos/config]].

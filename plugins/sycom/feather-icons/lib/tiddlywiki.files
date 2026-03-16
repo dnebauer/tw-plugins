@@ -1,0 +1,23 @@
+{
+	"tiddlers": [
+		{
+			"file": "feather-sprite.svg",
+			"fields": {
+				"title": "$:/plugins/sycom/feather-icons/lib/feather-sprite.svg",
+				"module-type": "library",
+				"tags": "$:/tags/RawMarkup",
+				"source": "https://github.com/feathericons/feather",
+				"version": "4.29.0"
+			}
+		},
+		{
+			"file": "feather-ext.svg",
+			"fields": {
+				"title": "$:/plugins/sycom/feather-icons/lib/feather-ext.svg",
+				"module-type": "library",
+				"tags": "$:/tags/RawMarkup",
+				"version": "4.21.0"
+			}
+		}
+	]
+}

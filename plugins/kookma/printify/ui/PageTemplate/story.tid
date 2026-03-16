@@ -1,0 +1,16 @@
+code-body: yes
+tags: $:/tags/Printify/PageTemplate
+title: $:/plugins/kookma/printify/ui/PageTemplate/story
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+<section class="tc-story-river" role="main" data-print-profile={{{ [[$:/config/Printify/Profile]get[text]lowercase[]else[quick]] }}} >
+
+<!-- AboveStory: story-backdrop was REMOVED- Mohammad -->
+
+<$list filter="[list[$:/Printify/StoryList]]" history="$:/Printify/HistoryList" template="$:/core/ui/StoryTiddlerTemplate" storyview="classic" emptyMessage="Select some tiddlers to print."/>
+
+<!-- BelowStory: story-frontdrop was REMOVED- Mohammad -->
+
+</section>

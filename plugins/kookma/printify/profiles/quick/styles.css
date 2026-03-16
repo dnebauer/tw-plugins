@@ -1,0 +1,9 @@
+/* Static styles for Quick print profile */
+/* Uncomment to use
+@media print {
+	section[data-print-profile="quick"] {
+		.thisselector {display: none;}
+		.thatselector {someprop: somevalue;}
+	}
+}
+*/

@@ -1,0 +1,30 @@
+created: 20250901090235501
+modified: 20250903155548450
+tags: 
+title: $:/plugins/kookma/printify/procedures/helper
+type: text/vnd.tiddlywiki
+
+\function profileTiddler() [all[tiddlers+shadows]tag[$:/tags/Printify/Profile]!is[draft]]:filter[get[caption]match{$:/config/Printify/Profile}] :else[[$:/plugins/kookma/printify/profiles/quick/config]]
+\function profileName()    [[$:/config/Printify/Profile]get[text]else[quick]!is[draft]]
+
+\procedure switch-property(thisIndex, thisLabel)
+<$checkbox tiddler=<<profileTiddler>> index=<<thisIndex>> checked="on" unchecked="off">
+<$text text=<<thisLabel>> />
+</$checkbox><br>
+\end
+
+\procedure set-property(thisIndex, thisLabel, thisTitle:"", inputTiddler:"$:/temp/printify/unknown")
+<label class="kk-printify-label" title=<<thisTitle>>><$text text=<<thisLabel>>/></label>
+<$keyboard key="escape" actions='<$action-setfield $tiddler=<<inputTiddler>> $index=<<thisIndex>> />' >
+<$edit-text tiddler=<<inputTiddler>> index=<<thisIndex>> tag=input default="" placeholder=<<thisTitle>> class="kk-printify-input-txt"/><br>
+</$keyboard>
+\end
+
+\procedure set-profile-property(thisIndex, thisLabel, thisTitle)
+<$transclude $variable="set-property"  thisIndex=<<thisIndex>> thisLabel=<<thisLabel>> thisTitle=<<thisTitle>> inputTiddler=<<profileTiddler>> />
+\end
+
+<!--
+The $:/temp/printify/unknown is a guard tiddler, if user forgot to set the inputTiddler,
+or did not pass it, prevent the unknown overwritten.
+-->

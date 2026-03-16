@@ -1,0 +1,18 @@
+created: 20161212130221042
+modified: 20191227170019117
+tags: 
+title: $:/plugins/tg/layout/themetweaks-help
+
+|Item |Entry |Description |Default |h
+|Theme tweaks |^Sidebar layout |^Choice between Fluid story, fixed sidebar and Fixed story, fluid sidebar|Fluid story, fixed sidebar&nbsp;^^1^^|
+|~|^Story left position |^How far the left margin of the story river (tiddler area) is from the left of the page| 0px|
+|~|^Story top position |^How far the top margin of the story river is from the top of the page| 0px ^^2^^|
+|~|^Story right |^How far the left margin of the sidebar is from the left of the page| 770px|
+|~|^Story width |^The overall width of the story river| 770px|
+|~|^Tiddler width |^Within the story river| 686px|
+|~|^Sidebar top position |^Start of the sidebar<br>(from the top)| 0px ^^2^^|
+|~|^Sidebar width |^The width of the sidebar in fluid-fixed layout| 350px|
+
+|borderless|k
+|^''@@font-size: 0.8em;1@@'' ||''Fluid story, fixed sidebar interferes with Tristate plugin'' => select Fixed story, fluid sidebar for Tristate plugin |
+|^''@@font-size: 0.8em;2@@'' |&nbsp;&nbsp;|Default values; ''need to be adjusted (increased) in case of adding a top menu, toolbar, tiddlersbar, ... to the wiki!''|

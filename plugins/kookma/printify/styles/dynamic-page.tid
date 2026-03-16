@@ -1,0 +1,35 @@
+created: 20250903164710438
+modified: 20250903164759050
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/printify/styles/dynamic-page
+type: text/vnd.tiddlywiki
+
+\import $:/plugins/kookma/printify/procedures/helper
+\function check.rule(property) [<profileTiddler>getindex<property>match[on]]
+\function get.prop(property) [<profileTiddler>getindex<property>]
+\function profile.name() [<profileTiddler>get[caption]lowercase[]]
+
+
+\procedure page-size()
+<%if [get.prop[page-size]!is[blank]] [get.prop[page-margin]!is[blank]] %>
+@page {
+	<%if [get.prop[page-size]]   %>size: <<get.prop page-size>>;<%endif%>
+	<%if [get.prop[page-margin]] %>margin: <<get.prop page-margin>>;<%endif%>
+}
+<%endif%>
+\end
+
+\procedure page-settings()
+<$list filter="[all[tiddlers+shadows]tag[$:/tags/Printify/ProfileStyle]contains:profile<profile.name>!is[draft]]">
+<$transclude $mode=block/>
+</$list>
+\end
+
+\whitespace trim
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline macrocallblock parameters fnprocdef conditional html
+
+/* work only if print layout is active */
+<%if [[$:/layout]get[text]match[$:/plugins/kookma/printify/layout/print]] %>
+	<<page-size>>
+	<<page-settings>>
+<%endif%>

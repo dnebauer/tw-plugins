@@ -1,0 +1,62 @@
+created: 20190420063746391
+modified: 20190509125641936
+revision: 0
+tags: 
+title: $:/plugins/.dtn/insert-table/readme
+type: text/vnd.tiddlywiki
+
+The <<.def insert-table>> plugin provides a [[macro|Macros]] which inserts a table whose contents are sourced from a [[dictionary tiddler|DictionaryTiddlers]]. (See [[plugin usage|$:/plugins/.dtn/insert-table/usage]] for how to use this macro.)
+
+!! Table components and their source
+
+The table contents are sourced as follows:
+
+; Caption
+
+* Sourced from dictionary tiddler field <<.field column-headings>>.
+* Optional -- omitted from table if field is not present or is empty.
+* The entire field content is used as the caption.
+
+; Column headings
+
+* Sourced from dictionary tiddler field <<.field table-caption>>.
+* Optional -- omitted from table if field is not present or is empty.
+* Space-delimited. If a value includes spaces enclose value in double square brackets.
+
+; Row data
+
+* Sourced from dictionary tiddler content, i.e., <<.field text>> field.
+* Required -- error message is printed if row data is missing.
+* Space-delimited. If a value includes spaces enclose value in double square brackets.
+
+!! Example source tiddler
+
+Here is an example dictionary tiddler which includes all supported table elements:
+
+```tid
+table-caption: Food Colours
+column-headings: [[Food Type]] Name Colour
+type: application/x-tiddler-dictionary
+
+1:Fruit Orange Orange
+2:Fruit Apple [[Red, pink, or green]]
+3:Vegetable [[Spanish onion]] [[White or yellow]]
+```
+
+Empty cells are indicated by `[[ ]]` -- the space ensures that css styling is applied to the cell.
+
+!! Table structure
+
+The table is output as raw html.
+
+Header cells are <<.field td>> elements rather than the more canonical <<.field th>> elements. This is a purely pragmatic decision to ensure tables created by this macro can be styled by the stylesheets provided by the [[Shiraz plugin|https://kookma.github.io/Shiraz/#%24%3A%2Fplugins%2F.mr%2Fshiraz plugin]]. This plugin will switch to outputting <<.field th>> headers cells when they are supported by Shiraz stylesheets.
+
+!! Styling
+
+Table styling is very deliberately separated from table content and is specified in the macro call. More specifically, the following can be specified in the macro call:
+
+* The css classes to apply to the table
+* The horizontal alignment of text in each table column
+* The sort order of table rows.
+
+Because these styling parameters are independent of the dictionary tiddler containing the table data, it is possible to display the same data in multiple tables, each with with different styling. See [[plugin usage|$:/plugins/.dtn/insert-table/usage]] for further details.

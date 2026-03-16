@@ -1,0 +1,16 @@
+{
+    "title": "$:/plugins/kookma/printify",
+    "version": "0.9.0",
+    "stability": "STABILITY_1_EXPERIMENTAL",
+    "name": "Printify",
+    "description": "Smart, seamless, and customizable printing for TiddlyWiki",
+    "author": "Mohammad Rahmani",
+    "source": "https://github.com/kookma/TW-Printify",
+    "list": "readme license history",
+    "plugin-priority": "",
+    "parent-plugin": "",
+    "dependents": "",
+    "plugin-type": "plugin",
+    "core-version": ">=5.3.6",
+    "packaged-by": "Gatha on 1st September 2025, 09:01:35"
+}

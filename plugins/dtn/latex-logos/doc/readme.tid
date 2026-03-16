@@ -1,0 +1,31 @@
+created: 20190210053019461
+modified: 20190210112453378
+title: $:/plugins/.dtn/latex-logos/readme
+type: text/vnd.tiddlywiki
+
+The latex-logos plugin provides these macros for displaying latex-related logos:
+
+|    table-borderless     |k
+| Macro name|Logo         |h
+|        tex|<<tex>>      |
+|      latex|<<latex>>    |
+|     pdftex|<<pdftex>>   |
+|   pdflatex|<<pdflatex>> |
+|      xetex|<<xetex>>    |
+|    xelatex|<<xelatex>>  |
+|     luatex|<<luatex>>   |
+|   lualatex|<<lualatex>> |
+|     miktex|<<miktex>>   |
+|     bibtex|<<bibtex>>   |
+|    context|<<context>>  |
+
+These logos are displayed using standard html and css.
+
+This approach has advantages:
+
+* It should work in any browser environment
+* If the logos are copied and pasted, the result is plain text.
+
+The major disadvantage is that the final sizing and placement of letters in the logos may vary depending on the combination of browser, font, operating system, and html element in which the logo appears.
+
+For this reason certain css values are configurable. For more details see the //config// information tiddler for this plugin. (Found in the plugin's details which can be found in $:/ControlPanel > Plugins, or Sidebar > More > Plugins).

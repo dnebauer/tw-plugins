@@ -1,0 +1,40 @@
+created: 20190210023254962
+font-size: 0.80em
+margin-left: -0.36em
+margin-right: -0.15em
+modified: 20190210075123204
+title: $:/config/plugin/.dtn/latex-logos/latex-a
+type: text/vnd.tiddlywiki
+vertical-align: -0.55ex
+
+!! Configuration tiddler for the latex-logos plugin
+
+In the <<latex>> logo:
+
+* Override the shrinking of the superscripted ''A''
+* Move the ''A'' closer to both the preceding ''L'' and following ''T''
+* Align the top of the ''A'' with the crossbar of the ''T''
+
+This is done by adjusting the following css properties:
+
+; font-size
+: Default: 0.80em
+: Increase the positive value to make the font larger
+: Decrease the positive value to make the font smaller
+
+; margin-left
+: Default: -0.36em
+: Increase the negative value to move the 'A' closer to the 'L'
+: Decrease the negative value to move the 'A' further from the 'L'
+
+; margin-right
+: Default: -0.15em
+: Increase the negative value to move the 'T' closer to the 'A'
+: Decrease the negative value to move the 'T' further from the 'A'
+
+; vertical-align
+: Default: -0.55em
+: Increasing a positive value moves the 'A' further upward from it default position
+: Increasing a negative value moves the 'A' further downward from its default position
+
+The plugin uses the field values attached to this tiddler. They can be adjusted directly or via the plugin information tiddler [[$:/plugins/.dtn/latex-logos/config]].

@@ -1,0 +1,24 @@
+tags: $:/tags/Printify/SideBarSegment
+title: $:/plugins/kookma/printify/ui/SideBarSegments/page-controls
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\function config-title() [[$:/config/PageControlButtons/Visibility/$(listItem)$]substitute[]]
+\function printify.controls() 
+$:/core/ui/Buttons/print
+$:/core/ui/Buttons/close-all
+$:/core/ui/Buttons/control-panel
+$:/plugins/kookma/commander/ui/Buttons/open-commander
+$:/core/ui/Buttons/full-screen
+$:/plugins/kookma/utility/ui/Buttons/edit-fields
+$:/core/ui/Buttons/layout
+:and[has[title]]
+\end
+
+<div class="tc-page-controls">
+	<$list filter="[printify.controls[]]" storyview="pop" variable="listItem">
+			<$let tv-config-toolbar-class={{{ [enlist<tv-config-toolbar-class>] [<listItem>encodeuricomponent[]addprefix[tc-btn-]] +[join[ ]] }}}>
+				<$transclude $tiddler=<<listItem>> $mode="inline"/>
+			</$let>
+	</$list>
+</div>

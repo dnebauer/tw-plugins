@@ -1,0 +1,9 @@
+/* Static styles for Craft print profile */
+/* Uncomment to use
+@media print {
+	section[data-print-profile="craft"] {
+		.thisselector {display: none;}
+		.thatselector {someprop: somevalue;}
+	}
+}
+*/

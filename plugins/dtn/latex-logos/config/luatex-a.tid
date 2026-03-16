@@ -1,0 +1,20 @@
+created: 20190210025243962
+margin-right: -0.15em
+modified: 20190210073113083
+title: $:/config/plugin/.dtn/latex-logos/luatex-a
+type: text/vnd.tiddlywiki
+
+!! Configuration tiddler for the latex-logos plugin
+
+In the <<luatex>> logo:
+
+* Move the ''T'' closer to the ''a''.
+
+This is done by adjusting the following css property:
+
+; margin-right
+: Default: -0.15em
+: Increase the negative value to move the 'T' closer to the 'a'
+: Decrease the negative value to move the 'T' further from the 'a'
+
+The plugin uses the field value attached to this tiddler. It can be adjusted directly or via the plugin information tiddler [[$:/plugins/.dtn/latex-logos/config]].

@@ -1,0 +1,17 @@
+created: 20190426114908253
+creator: David Nebauer
+modified: 20190426125724827
+title: $:/plugins/.dtn/enlist-allow-duplicates/readme
+type: text/vnd.tiddlywiki
+
+Provides a drop-in replacement for the [[enlist|enlist Operator]] filter operator. The new filter operator, <<.op enlistallowduplicates>>, differs from <<.op enlist>> in that it does //not// remove duplicate list items, but retains them.
+
+This filter operator relies on an undocumented feature of the <<.op "$tw.utils.parseStringArray()">> macro as defined in the <<.var boot/boot.js>> file. According to the release notes for Tiddlywiki version 5.1.18 ([[local|Release 5.1.18]], [[web|https://tiddlywiki.com/#Release%205.1.18]]), the //Developer Bug Fixes and Improvements// include:
+
+<<<
+[[Refactored|https://github.com/Jermolene/TiddlyWiki5/pull/2027]] `$tw.utils.parseStringArray()` to optionally allow non-unique entries
+<<<
+
+The link in the release note is to the github pull request that altered  <<.op "$tw.utils.parseStringArray()">> to be optionally able to return list values that retain duplicate items.
+
+The <<.op enlistallowduplicates>> filter operator provided by this plugin makes use of this undocumented optional behaviour of <<.op "$tw.utils.parseStringArray()">>.

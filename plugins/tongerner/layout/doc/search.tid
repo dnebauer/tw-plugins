@@ -1,0 +1,8 @@
+created: 20181228194403881
+modified: 20220416194603359
+tags: 
+title: $:/plugins/tg/layout/search
+
+<div class="tc-tiddler-frame">
+{{$:/AdvancedSearch}}
+</div>

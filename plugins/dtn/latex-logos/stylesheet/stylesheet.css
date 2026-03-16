@@ -1,0 +1,93 @@
+/* For styling ~LaTeX and ~TeX logos
+
+Designed to work specifically with a set of macros defined in [[$:/plugins/.dtn/latex-logos/macros]].
+
+Credits: [[TEX and LATEX logo POSHlets|http://tess.oconnor.cx/2007/08/tex-poshlet]], [[StackOverflow: Is there CSS for typesetting the XeLaTeX logo in HTML?|https://stackoverflow.com/a/20563084]].
+*/
+
+/* Most lowercase: change to uppercase */
+
+.logo-latex     sup,
+.logo-tex       sub,
+.logo-xetex     sub,
+.logo-xelatex   sub,
+.logo-bibtex-ib {
+  text-transform: uppercase;
+}
+
+/* TEX 'E': prevent size reduction,
+            adjust vertical position,
+            adjust inter-character spacing (kerning) */
+
+.logo-tex sub {
+  font-size: {{$:/config/plugin/.dtn/latex-logos/tex-e!!font-size}};
+  margin-left: {{$:/config/plugin/.dtn/latex-logos/tex-e!!margin-left}};
+  margin-right: {{$:/config/plugin/.dtn/latex-logos/tex-e!!margin-right}};
+  vertical-align: {{$:/config/plugin/.dtn/latex-logos/tex-e!!vertical-align}};
+}
+
+/* LATEX 'A': reduce size,
+              raise so top is even with T crossbar,
+              adjust kerning, i.e., slide left into L */
+
+.logo-latex sup {
+  font-size: {{$:/config/plugin/.dtn/latex-logos/latex-a!!font-size}};
+  margin-left: {{$:/config/plugin/.dtn/latex-logos/latex-a!!margin-left}};
+  margin-right: {{$:/config/plugin/.dtn/latex-logos/latex-a!!margin-right}};
+  vertical-align: {{$:/config/plugin/.dtn/latex-logos/latex-a!!vertical-align}};
+}
+
+/* XƎTEX 'Ǝ': prevent size reduction,
+              reverse regular 'E' character,
+              adjust vertical position,
+              adjust inter-character spacing (kerning) */
+
+.logo-xetex sub {
+  font-size: {{$:/config/plugin/.dtn/latex-logos/xetex-ɘ!!font-size}};
+  margin-left: {{$:/config/plugin/.dtn/latex-logos/xetex-ɘ!!margin-left}};
+  margin-right: {{$:/config/plugin/.dtn/latex-logos/xetex-ɘ!!margin-right}};
+  vertical-align: {{$:/config/plugin/.dtn/latex-logos/xetex-ɘ!!vertical-align}};
+  display: inline-block;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/* XƎLATEX 'Ǝ': same as XƎTEX 'Ǝ' except
+                less kerning between 'ƎL' than 'ƎT' */
+
+.logo-xelatex sub {
+  font-size: {{$:/config/plugin/.dtn/latex-logos/xelatex-ɘ!!font-size}};
+  margin-left: {{$:/config/plugin/.dtn/latex-logos/xelatex-ɘ!!margin-left}};
+  margin-right: {{$:/config/plugin/.dtn/latex-logos/xelatex-ɘ!!margin-right}};
+  vertical-align: {{$:/config/plugin/.dtn/latex-logos/xelatex-ɘ!!vertical-align}};
+  display: inline-block;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/* ~LuaTEX first 'a': adjust kerning, i.e., move right under T crossbar */
+
+.logo-luatex-a {
+  margin-right: {{$:/config/plugin/.dtn/latex-logos/luatex-a!!margin-right}};
+}
+
+/* BIBTEX 'IB': reduce to small caps,
+                adjust kerning between 'B' and following 'T' */
+
+.logo-bibtex-ib {
+  font-size: {{$:/config/plugin/.dtn/latex-logos/bibtex-ib!!font-size}};
+}
+
+.logo-bibtex-b {
+  margin-right: {{$:/config/plugin/.dtn/latex-logos/bibtex-ib!!margin-right}};
+}
+
+/* ~ConTEXt 'n': adjust kerning, i.e., move right under T crossbar */
+
+.logo-context-n {
+  margin-right: {{$:/config/plugin/.dtn/latex-logos/context-n!!margin-right}};
+}

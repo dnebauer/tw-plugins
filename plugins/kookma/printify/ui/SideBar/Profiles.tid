@@ -1,0 +1,44 @@
+caption: {{$:/plugins/kookma/printify/language/SideBar/Profiles/Caption}}
+created: 20250903153712202
+modified: 20250903154257497
+tags: $:/tags/Printify/SideBar
+title: $:/plugins/kookma/printify/ui/SideBar/Profiles
+type: text/vnd.tiddlywiki
+
+\import $:/plugins/kookma/printify/procedures/helper
+\import $:/plugins/kookma/printify/procedures/expandstyles
+
+<dl>
+<dt style="margin-bottom:10px;">
+Select a print profile
+</dt>
+<$list filter="[all[tiddlers+shadows]tag[$:/tags/Printify/Profile]!is[draft]]">
+<dd title={{!!description}} style="margin-bottom:2px;">
+<$radio tiddler="$:/config/Printify/Profile" field="text" value={{!!caption}} default="quick">
+	<$text text={{{[{!!caption}titlecase[]addsuffix[ Print]]}}}/></$radio>
+</dd>
+</$list>
+</dl>
+<div style="margin-left:40px; margin-top:-10px; font-size: smaller;">
+<$link to="Create New Print Profile">Create New Profile</$link>
+</div>
+<hr/>
+
+<!-- profile settings UI -->
+
+; Active profile: <$text text={{{ [<profileTiddler>get[caption]titlecase[]addsuffix[ Print]] }}} />
+: <$text text={{{ [<profileTiddler>get[description]] }}} />
+: Config tiddler for direct edit (<$link to=<<profileTiddler>>/>)
+
+<$transclude $tiddler={{{ [all[tiddlers+shadows]tag[$:/tags/Printify/ProfileUI]!is[draft]profile<profileName>first[]] }}} $mode="block" /><!--first is used to prevent user misuse of UI-->
+
+---
+
+''Advanced configuration''
+
+<div style="margin-left:40px">
+
+<$transclude $variable="expandable-stylesheets-list" styleFilter="[all[tiddlers+shadows]profile<profileName>!is[draft]sort[]]" />
+
+</div>
+

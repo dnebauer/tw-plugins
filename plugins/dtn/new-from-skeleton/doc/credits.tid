@@ -1,0 +1,13 @@
+created: 20190501212944273
+modified: 20190503172432835
+tags: 
+title: $:/plugins/.dtn/new-from-skeleton/credits
+type: text/vnd.tiddlywiki
+
+The ~TiddlyWiki help page on [[Page and tiddler layout customisation|https://tiddlywiki.com/static/Page%2520and%2520tiddler%2520layout%2520customisation.html]] has a section called "Creating new buttons for the ~ViewToolbar and page controls" which provides greatly abbreviated instructions for adding a new button to the View Toolbar.
+
+Ton Gerner's [[TW5 customisation site|http://tw5custom.tiddlyspot.com/]] provides more detailed instructions and uses the example of a button that creates a new tiddler from a template. The interface of this site is highly compressed and may initially be difficult to navigate. Most of the necessary information is provided at Customisation > Advanced customisation > Button & Icons > Buttons. Within that section look particularly at:
+
+* Buttons general
+* Button structure > Standard buttons
+* Button examples > Standard buttons.

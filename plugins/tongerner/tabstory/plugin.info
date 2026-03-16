@@ -1,0 +1,15 @@
+{
+    "title": "$:/plugins/tg/tabstory",
+    "author": "TonGerner",
+    "core-version": ">=5.1.15",
+    "created": "20191229182106947",
+    "creator": "TonGerner",
+    "description": "Tabs on top of story",
+    "list": "readme license",
+    "modified": "20201227183239335",
+    "modifier": "TonGerner",
+    "name": "Tabstory",
+    "plugin-type": "plugin",
+    "source": "http://www.tongerner.nl/TW5/TW5_index.html",
+    "version": "0.1.20"
+}

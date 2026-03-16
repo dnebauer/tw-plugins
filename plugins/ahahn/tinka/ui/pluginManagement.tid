@@ -1,0 +1,52 @@
+caption: Modify Plugins
+tags: $:/tags/tinka/ControlPanel
+title: $:/plugins/ahahn/tinka/pluginManagement
+type: text/vnd.tiddlywiki
+
+
+\define plugin-dropdown(type)
+<$list filter="[!has[draft.of]plugin-type[$type$]sort[description]]" emptyMessage=<<lingo "Empty/Hint">>>
+
+<$reveal type="match" text=<<currentTiddler>> state="$:/temp/tinka/ModifyPluginSearch!!search" >
+	<div class="tc-plugin-info-dropdown">
+	<div class="tc-plugin-info-dropdown-body">
+	<$set name="target" value=<<currentTiddler>> >
+	<h2 style="text-align: center;">''<$text text={{{ [<currentTiddler>get[name]] ~[<currentTiddler>split[/]last[1]] }}} />''</h2>
+	<h3 style="text-align: center;">Version: <$view field="version" /> - <$view field="description" /></h3>
+
+	{{$:/plugins/ahahn/tinka/dropdownManage}}
+
+	</$set>
+	</div>
+	</div>
+</$reveal>
+
+</$list>
+\end
+
+''Choose Plugin to Modify:'' <$edit-text tag="input" type="text" placeholder="$:/plugins/myPlugin" focusPopup="$:/temp/tinka/ModifyPluginPopup" class="tc-popup-handle" tiddler="$:/temp/tinka/ModifyPluginSearch" field="search" cancelPopups="yes"/>
+<$button popup="$:/temp/tinka/ModifyPluginPopup" class="tc-btn-invisible tc-btn-dropdown">{{$:/core/images/down-arrow}}</$button>
+
+<$reveal state="$:/temp/tinka/ModifyPluginPopup" type="popup" position="below">
+<div class="tc-block-dropdown tc-edit-type-dropdown">
+<$linkcatcher to="$:/temp/tinka/ModifyPluginSearch!!search">
+<div class="tc-dropdown-item">
+Plugins
+</div>
+<$list filter="[!has[draft.of]plugin-type[plugin]sort[description]]" emptyMessage=<<lingo "Empty/Hint">>>
+	<$link to=<<currentTiddler>> >''<$text text={{{ [<currentTiddler>get[name]] ~[<currentTiddler>split[/]last[1]] }}} />'' - <$view field="version" /></$link>
+</$list>
+<div class="tc-dropdown-item">
+Themes
+</div>
+<$list filter="[!has[draft.of]plugin-type[theme]sort[description]]" emptyMessage=<<lingo "Empty/Hint">>>
+	<$link to=<<currentTiddler>> >''<$text text={{{ [<currentTiddler>get[name]] ~[<currentTiddler>split[/]last[1]] }}} />'' - <$view field="version" /></$link>
+</$list>
+</$linkcatcher>
+</div>
+</$reveal>
+
+
+<<plugin-dropdown plugin>>
+<<plugin-dropdown theme>>
+

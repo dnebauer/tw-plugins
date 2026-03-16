@@ -1,0 +1,22 @@
+created: 20200113122827159
+list-after: $:/themes/tiddlywiki/vanilla/base
+modified: 20230823175425790
+tags: $:/tags/Stylesheet
+title: $:/plugins/tg/layout/button2top/style
+
+<pre>/* BUTTON TO TOP */
+.tgc-fixed-bottom {
+     display: block;
+     position: fixed;
+     bottom: 10px;
+     right: 10px;
+     padding: 8px;
+     background-color: <<colour page-background>>;
+}
+.tgc-button-color {
+     fill: {{$:/plugins/tg/layout/styles!!active-state-color}};
+}
+.tgc-button-color:hover {
+     fill: <<colour sidebar-controls-foreground-hover>>;
+}
+</pre>

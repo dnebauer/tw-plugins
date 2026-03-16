@@ -1,0 +1,11 @@
+{
+	"title": "$:/plugins/.dtn/insert-table",
+	"description": "InsertTable - insert table defined in a data tiddler",
+	"author": "David Nebauer",
+	"version": "0.0.6",
+	"core-version": ">=5.1.18",
+	"source": "https://github.com/dnebauer/tw-insert-table",
+	"list": "readme usage dependencies credits license",
+	"dependents": "",
+	"plugin-type": "plugin"
+}

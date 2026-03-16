@@ -1,0 +1,25 @@
+created: 20190816185216079
+modified: 20220415161816247
+tags: 
+title: $:/plugins/tg/layout/upgrade
+
+Recommended before upgrading one of the following plugins:
+
+* Layout adjustment
+* Top menu
+* Top toolbar
+* Tiddlersbar
+
+<hr>
+
+
+# Note down all adjustments made in the Settings section of the plugin
+# Delete overridden shadow tiddlers of the plugin ^^1^^:
+#* Settings
+#* Styles
+#* ...
+# Upgrade the plugin
+# Reapply the settings
+
+|borderless|k
+|^^^1^^ |&emsp;|Open Control Panel (<<icn $:/core/images/options-button>>) > Info > Basics. At the bottom click <<icn $:/core/images/advanced-search-button>> next to the Number of overridden shadow tiddlers.|

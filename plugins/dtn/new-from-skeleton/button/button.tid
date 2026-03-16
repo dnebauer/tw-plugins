@@ -1,0 +1,35 @@
+caption: {{$:/plugins/.dtn/new-from-skeleton/button/image}} {{$:/plugins/.dtn/new-from-skeleton/button/caption}}
+created: 20190118104453811
+description: {{$:/plugins/.dtn/new-from-skeleton/button/hint}}
+modified: 20190503174730158
+tags: $:/tags/ViewToolbar
+title: $:/plugins/.dtn/new-from-skeleton/button
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\define newTiddlerButton()
+  <$button class=<<tv-config-toolbar-class>>
+           tooltip={{$:/plugins/.dtn/new-from-skeleton/button/hint}} >
+
+    <!-- Create new tiddler from tiddler titled "$param" -->
+
+    <$action-sendmessage $message="tm-new-tiddler"
+                         $param="$:/config/plugins/.dtn/new-from-skeleton/skeleton"
+                         title="New Tiddler" />
+
+    <!-- Add as toolbar button -->
+
+    <$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
+      {{$:/plugins/.dtn/new-from-skeleton/button/image}}
+    </$list>
+
+    <$list filter="[<tv-config-toolbar-text>prefix[yes]]">
+      <span class="tc-btn-text">
+        <$text text={{$:/plugins/.dtn/new-from-skeleton/button/caption}}/>
+      </span>
+    </$list>
+
+  </$button>
+\end
+
+<<newTiddlerButton>>

@@ -1,0 +1,23 @@
+created: 20170325114702089
+creator: TonGerner
+modified: 20191228200736188
+modifier: TonGerner
+tags: $:/tags/PageTemplate
+title: $:/plugins/tg/tiddlersbar/tiddlersbar
+
+<div class="tgc-tiddlersbar" >
+<$list filter="[list[$:/StoryList]]" history="$:/HistoryList" variable="currentTab">
+<$reveal type="match" state="$:/HistoryList!!current-tiddler" text=<<currentTab>>>
+<div style="display:inline-block;">
+<$button to=<<currentTab>> class="tgc-tiddlersbar-selected" style="margin-right: -0.4em; border-right: 0.0em">
+<$macrocall $name="currentTab" $type="text/plain" $output="text/plain"/>
+</$button>
+<$button message="tm-close-tiddler" param=<<currentTab>> class="tgc-tiddlersbar-selected tgc-x" style="border-left: 0.0em;">X</$button></div></$reveal>
+<$reveal type="nomatch" state="$:/HistoryList!!current-tiddler" text=<<currentTab>>>
+<div style="display:inline-block;">
+<$button to=<<currentTab>>  style="margin-right: 0.0em;" >
+<$macrocall $name="currentTab" $type="text/plain" $output="text/plain"/>
+</$button><$button message="tm-close-tiddler" param=<<currentTab>> class="tgc-x">
+X</$button></div></$reveal>
+</$list>
+</div>

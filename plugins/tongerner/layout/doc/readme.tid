@@ -1,0 +1,59 @@
+created: 20150731184044439
+creator: TonGerner
+modified: 20230807160111973
+modifier: TonGerner
+title: $:/plugins/tg/layout/readme
+
+''Note:''<br>This plugin contains 'general' settings for the layout and is additionally required for my following plugins: ^^1^^
+
+* Top menu
+* Top-left menu (top + left menu)
+* Toolbar (on top)
+* Tiddlersbar
+* ~TabStory (alternative tiddlersbar at top of story)
+* Uptoolbar (toolbar above title)
+* Tristate (tristate sidebar)
+
+This plugin contains layout code common to the mentioned plugins and let you adjust:
+
+!! Theme tweaks
+* Sidebar layout
+* Story left position
+* Story top position
+* Story right
+* Story width
+* Tiddler width
+* Sidebar top position
+* Sidebar width
+
+!! Layout tweaks
+* Checkboxes
+** Display layout button (<<icn $:/plugins/tg/layout/images/layout>>)
+** Search above story
+** Toolbar to toggle editor toolbar + preview
+** Sort recent results alphabetical
+** Button to top of story river
+** Hide description Tools tab buttons
+** System tags tab
+** Recent dates bold
+** Sticky titles
+** Sticky editor toolbar
+** Set tiddler toolbar above the tiddler title
+** Tagging in view mode
+** Field handling in view mode
+** Setting type in view mode
+
+* Other settings
+** Color and height of the top bar (as a boundary for top menu, toolbar, tiddlersbar, etc.)
+*** Note that the Sticky Title position automatically changes with the height of the top bar!
+** Top padding of a tiddler
+** Color for  displaying the 'active' state of some toggle buttons
+
+Settings for the layout can be found in ''~ControlPanel > Appearance > [[Plugin tweaks|$:/plugins/tg/layout/tweaks]]'', also available via the 'Adjust layout' button (<<icn $:/plugins/tg/layout/images/layout>>) in the Toprightbar.
+
+|borderless|k
+|^^^1^^ |&nbsp;&nbsp;|All these plugins contain a 'Settings' tiddler tagged with $:/tags/plugin-tweaks and will display - when installed - a tab under 'Plugin tweaks'.|
+
+!! Available (global) macros
+* Slider macro; use: `<<sldr "label" "tiddler" "class">>` (class optional)
+* Icon macro displays svg icon at correct size in documentation; use: `<<icn "icon">>`

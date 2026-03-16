@@ -1,0 +1,24 @@
+borderless-orange: table-borderless table-striped-row thead-orange caption-top
+created: 20190314092216872
+modified: 20190424101421833
+revision: 0
+title: $:/config/plugin/.dtn/insert-table/style-sets
+type: text/vnd.tiddlywiki
+
+This tiddler is used by the <<.tid ".dtn/insert-table">> plugin to define sets of css classes used to style the tables created by the <<.var "insert-table">> macro.
+
+Each set of css classes is defined in a field of this tiddler. The field name is the name of the class set, and the value of the field is a string containing a space-delimited list of css classes to apply to the table. For example, the field <<.field "borderless-orange">> may be set to <<.value "table-borderless table-striped-row thead-orange caption-top">>.
+
+The field name is used as the <<.var "classes">> parameter of the <<.var "insert-table">> macro. Importantly, each class in the set will be added to the "class" attribute of the "table" element. For example, the macro call:
+
+```tid
+<$macrocall $name="insert-table" source="MyTableSource" classes={{$:/config/plugin/.dtn/insert-table/style-sets!!borderless-orange}}/>
+```
+
+results in the following html table element:
+
+```html
+<table class="table-borderless table-striped-row thead-orange caption-top">
+```
+
+The css classes must be designed for use in the <<.field "class">> attributes of the <<.field "table">> html element. You can avoid having to design your own table-specific css classes by using those provided in the [[Shiraz|https://kookma.github.io/Shiraz/#%24%3A%2Fplugins%2F.mr%2Fshiraz]] plugin. The css classes used in the example above are all shiraz css classes.

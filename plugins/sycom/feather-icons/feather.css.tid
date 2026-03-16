@@ -1,0 +1,119 @@
+title: $:/plugins/sycom/feather-icons/feather.css
+tags: [[$:/tags/Stylesheet]]
+
+/* Styles for the plugin (icon) */
+.tc-plugin-info-chunk > svg.tc-image-feather-icons {
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 1.75;
+}
+a.tc-tiddlylink.tc-plugin-info:hover > .tc-plugin-info-chunk > svg.tc-image-feather-icons {
+  stroke: #bbb;
+  fill: currentcolor;
+}
+
+svg.feather .nofill {
+  fill: <<colour background>>;
+}
+
+/* Styles for feathers sprites svg icons */
+svg.feather, ul.feather svg {
+  width: 1.1em;
+  height: 1.1em;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  vertical-align: sub;
+}
+svg.feather.x2 {
+  width: 2em;
+  height: 2em;
+  stroke-width: 1.35;
+}
+svg.feather.x3 {
+  width: 3em;
+  height: 3em;
+  stroke-width: 1.25;
+}
+svg.feather.x5 {
+  width: 5em;
+  height: 5em;
+  stroke-width: 1.15;
+}
+svg.feather.x11 {
+  width: 11em;
+  height: 11em;
+  stroke-width: 0.9;
+}
+svg.feather.thin {
+  stroke-width: 1px;
+}
+svg.feather.block {
+  display:block;
+}
+
+ul.feather {
+  margin:.5em;
+}
+ul.feather li {
+  list-style: none;
+}
+ul.feather li svg {
+  margin: 0 0.1em;
+}
+
+/* styles for the list */
+.count {
+  text-align:center;
+  font-size:.9em;
+}
+
+.presentation {
+  display: flex;
+  flex-wrap: wrap;
+}
+.presentation .block {
+	display: inline-block;
+  padding: .5em;
+  width: 33%;
+}
+.presentation div div {
+  background: <<colour page-background>>;
+  padding: .5em;
+}
+.presentation .feather-icons div {
+  background: rgba(175, 190, 210, 0.35)
+}
+.presentation .feather-icons-ext div {
+  background: rgba(210, 190, 175, 0.35)
+}
+
+.presentation span {
+  margin-left: .2em;
+  font-size: .9em;
+  vertical-align: top;
+  padding-left: .5em;
+}
+
+
+/* style corrections for TW usage (icon substitution) */
+.tc-btn-invisible svg.feather,
+.tc-tiddler-controls svg.feather,
+body.tc-dirty span.tc-dirty-indicator svg.feather {
+  fill:none;
+}
+
+.tc-btn-invisible:hover svg.feather,
+.tc-tiddler-controls svg.feather {
+  fill:none;
+  stroke: <<colour sidebar-controls-foreground-hover>>;
+  stroke-width: 2;
+}
+
+button.tc-selected svg.feather {
+	fill:none;
+  stroke: <<colour primary>>;
+  stroke-width: 2px;
+}

@@ -1,0 +1,12 @@
+caption: General info
+created: 20190902161718650
+modified: 20220223201833612
+order: 1
+tags: $:/tags/plugin-tweaks
+title: $:/plugins/tg/layout/info
+
+* <<sldr "CSS units" $:/plugins/tg/layout/css-units>>
+* <<sldr "Combine plugins" $:/plugins/tg/layout/combination>>
+* <<sldr "Upgrading plugins" $:/plugins/tg/layout/upgrade>>
+
+
