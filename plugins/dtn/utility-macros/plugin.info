@@ -7,5 +7,7 @@
 	"source": "https://github.com/dnebauer/tw-utility-macros",
 	"list": "readme credits license",
 	"dependents": "",
+	"help-button-demo": "This is the demo help.",
+	"help-button-demo2": "This is a demo with a custom button.",
 	"plugin-type": "plugin"
 }
