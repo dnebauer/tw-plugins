@@ -1,12 +1,15 @@
 created: 20200921131642265
 modified: 20200921140907972
-tags: 
+tags:
 title: $:/plugins/.dtn/utility-macros/readme
 type: text/vnd.tiddlywiki
+help-button-demo: This is the demo help.
+help-button-demo2: This is a demo with a custom button.
 
 This plugin provides the following macros:
 
 * check-var-or-macro -- check whether macro-or variable exists
+* help-button -- display a superscripted popup link ('help button')
 * home-path-link -- display hyperlink to a path in user's home directory
 * list-item-space -- add vertical space after a list item
 * number-format -- format a number.
@@ -42,6 +45,32 @@ The following message if the variable or macros does not exist:
 !! Tiddlers
 
 * [[$:/plugins/.dtn/utility-macros/check-var-or-macro]]: macro definition.
+
+---
+
+! help-button
+
+!! Use
+
+```
+This adds a help button that looks like this<<help-button help-button-demo>>
+```
+
+This adds a help button that looks like this<<help-button help-button-demo>>
+
+
+```
+This adds a help button that looks like this<<help-button help-button-demo2 'why?'>>
+```
+
+This adds a help button that looks like this<<help-button help-button-demo2 'why?'>>
+
+
+Contents of the `help-button-demo` field: {{!!help-button-demo}}
+
+Contents of the `help-button-demo2` field: {{!!help-button-demo2}}
+
+You make a field for each label that contains the help information. This can have html and simple wikitext. Since it is a field linebreaks need to be added using html `<br>` tags.
 
 ---
 

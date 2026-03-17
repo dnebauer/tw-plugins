@@ -1,0 +1,11 @@
+created: 20160204204011989
+creator: Ste.W
+modified: 20260317103156702
+modifier: dtn
+tags: $:/tags/Macro
+title: $:/plugins/.dtn/utility-macros/help-button
+type: text/vnd.tiddlywiki
+
+\define help-button(label, ButtonText:?)
+^^(<$button popup="""$:/temp/popup/$(currentTiddler)$/$label$""" class='tc-btn-invisible tc-tiddlylink'>$ButtonText$</$button>)<$reveal type='popup' state="""$:/temp/popup/$(currentTiddler)$/$label$"""><div class='tc-drop-down' style='width:150px;max-width:75vw;white-space:pre-wrap;padding:10px;text-align:left;font-size:1.3em;border-radus:0.5em;'><$transclude field="""$label$"""/></div></$reveal>^^
+\end
