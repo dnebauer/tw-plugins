@@ -1,0 +1,5 @@
+/* Styling to left-align table header cells */
+
+.table-header-left th {
+  text-align: left;
+}

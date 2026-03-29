@@ -1,0 +1,11 @@
+{
+	"title": "$:/plugins/.dtn/custom-styling",
+	"description": "Custom styles used by David Nebauer",
+	"author": "David Nebauer",
+	"version": "0.0.1",
+	"core-version": ">=5.3.8",
+	"source": "https://github.com/dnebauer/tw-plugins",
+	"list": "readme sidebar credits license",
+	"dependents": "",
+	"plugin-type": "plugin"
+}

@@ -1,0 +1,22 @@
+caption: Body Font Size
+created: 20260328080028261
+modified: 20260328080139248
+title: $:/plugins/.dtn/custom-styling/doc/override-body-font-size
+type: text/vnd.tiddlywiki
+
+The default font size used when viewing a tiddler appears, based on experimentation, to be 0.90em.
+
+This is overriden to slightly enlarge the font size.
+
+<<.tip "This does not change the font size in editor mode. It has effect only when the tiddler is in view mode.">>
+
+---
+
+The definition tiddler is:
+
+|table-borderless|k
+| title:|[[$:/plugins/.dtn/custom-styling/override-tw-styles/body-font-size]] |
+| tags:|$:/tags/Stylesheet |
+| type:|text/css |
+
+<$codeblock code={{$:/plugins/.dtn/custom-styling/override-tw-styles/body-font-size}} language="css"/>

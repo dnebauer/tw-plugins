@@ -1,0 +1,20 @@
+caption: Sidebar Tab Appearance
+created: 20260328075557034
+modified: 20260328075803054
+title: $:/plugins/.dtn/custom-styling/doc/override-sidebar-tab-appearance
+type: text/vnd.tiddlywiki
+
+This customisation alters the sidebar tab style to a cleaner look with more spaced out tabs, and the active tab highlighted in bold red font.
+
+---
+
+The definition tiddler is:
+
+|table-borderless|k
+| title:|[[$:/plugins/.dtn/custom-styling/override-tw-styles/sidebar-tab-appearance]] |
+| tags:|$:/tags/Stylesheet |
+| type:|text/css |
+
+<$codeblock code={{$:/plugins/.dtn/custom-styling/override-tw-styles/sidebar-tab-appearance}} language="css"/>
+
+Credit: [[tesseRact tiddlywiki|https://ibnishak.github.io/Tesseract/UI/index.html#Sidebar%20Tabs%20Alternate%20Style]].

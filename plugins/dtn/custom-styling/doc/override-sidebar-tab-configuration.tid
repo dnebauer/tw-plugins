@@ -1,0 +1,47 @@
+caption: Sidebar Tab Configuration
+created: 20190117115009537
+modified: 20260302070734171
+tags:
+title: $:/plugins/.dtn/custom-styling/doc/override-sidebar-tab-configuration
+type: text/vnd.tiddlywiki
+
+This customisation enables you to toggle core tabs in the sidebar to appear in the main menu and/or the 'More' submenu.
+
+The basic functionality is provided by [[$:/plugins/.dtn/custom-styling/override-tw-styles/sidebar-tab-configuration]]. Open this tiddler to adjust the sidebar tab configuration.
+
+The [[$:/plugins/.dtn/custom-styling/override-tw-styles/sidebar-tab-configuration-customise]] tiddler allows for further customisation of this functionality:
+
+; <<.attr "text">> field
+: use the tiddler text to specify a namespace for custom tabs
+: in this wiki, the prefix being used is <code><$view tiddler="$:/plugins/.dtn/custom-styling/override-tw-styles/sidebar-tab-configuration-customise" field="text"/></code>
+
+; <<.attr "more">> field
+: the title for an extra column
+: useful for a tab holding custom subtabs, equivalent to ''More''
+
+; <<.attr "more-tag">> field
+: the tag-name to be toggled via check-boxes in the extra column
+
+<<.warning "Even if you do not intend to use [[$:/plugins/.dtn/custom-styling/override-tw-styles/sidebar-tab-configuration-customise]] to customise the configuration table, it must be present in order to restrict the table display to core tabs. If [[$:/plugins/.dtn/custom-styling/override-tw-styles/sidebar-tab-configuration-customise]] is removed, the configuration table lists every tiddler in the tiddkywiki.">>
+
+---
+
+The definition tiddler is:
+
+|table-borderless|k
+| title:|[[$:/plugins/.dtn/custom-styling/override-tw-styles/sidebar-tab-configuration]] |
+| tags:| |
+| type:|text/vnd.tiddlywiki |
+
+<$codeblock code={{$:/plugins/.dtn/custom-styling/override-tw-styles/sidebar-tab-configuration}} language="text/vnd.tiddlywiki"/>
+
+The customisation tiddker is:
+
+|table-borderless|k
+| title:|[[$:/plugins/.dtn/custom-styling/override-tw-styles/sidebar-tab-configuration-customise]] |
+| tags:| |
+| type:|text/vnd.tiddlywiki |
+
+<$codeblock code={{$:/plugins/.dtn/custom-styling/override-tw-styles/sidebar-tab-configuration-customise}} language="text/vnd.tiddlywiki"/>
+
+Credits: Tobias Beer's [[tb5 tiddlywiki|https://tobibeer.github.io/tb5/]], specifically the [[Toggling And Moving Sidebar-Tabs|https://tobibeer.github.io/tb5/#Toggling%20And%20Moving%20Sidebar-Tabs]] tiddler.

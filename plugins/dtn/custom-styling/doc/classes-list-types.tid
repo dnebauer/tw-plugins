@@ -1,0 +1,86 @@
+caption: .a .A .r .R .d .D .n (List Styles)
+created: 20190317051827081
+modified: 20260325105508800
+title: $:/plugins/.dtn/custom-styling/doc/classes-list-types
+type: text/vnd.tiddlywiki
+
+The default labelling of ordered lists is decimal numbers at each hierarchical level.
+
+For example:
+
+```tid
+# Fruit
+## Apple
+## Banana
+# Vegetable
+## Tomato
+## Pumpkin
+```
+
+results in:
+
+# Fruit
+## Apple
+## Banana
+# Vegetable
+## Tomato
+## Pumpkin
+
+The tiddler [[$:/plugins/.dtn/custom-styling/custom-styles/list-types]] defines other label styles for ordered lists:
+
+| Class|Style |Examples |h
+| a|lower-alpha |a, b, c |
+| A|upper-alpha |A, B, C |
+| r|lower-roman |i, ii, iii |
+| R|upper-roman |I, II, III |
+| d|decimal |1, 2, 3 |
+| D|decimal-leading-zero |01, 02, 03 |
+| n|none |  |
+
+These can be invoked by appending the class name to the list item signifier using dot notation. This is best explained with an example:
+
+```tid
+#.a Fruit
+##.A Apple
+##.A Banana
+#.r Vegetable
+##.R Tomato
+##.R Pumpkin
+# Meat
+##.D Beef
+##.D Chicken
+# Drink
+##.n Water
+##.n Beer
+```
+
+that results in:
+
+#.a Fruit
+##.A Apple
+##.A Banana
+#.r Vegetable
+##.R Tomato
+##.R Pumpkin
+# Meat
+##.D Beef
+##.D Chicken
+# Drink
+##.n Water
+##.n Beer
+
+Notes:
+
+* The list defaults to decimal labels when no class is provided
+* The leading zeroes assumes a list of 10--99 items, i.e., two digits long, regardless of the actual list size.
+
+---
+
+The definition tiddler is:
+
+|table-borderless|k
+| title:|[[$:/plugins/.dtn/custom-styling/custom-styles/list-types]] |
+| tags:|$:/tags/Stylesheet |
+| type:|text/css |
+
+<$codeblock code={{$:/plugins/.dtn/custom-styling/custom-styles/list-types}} language="css"/>

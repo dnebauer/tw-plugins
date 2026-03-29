@@ -1,0 +1,18 @@
+caption: List Indent Reduce
+created: 20260328073107619
+modified: 20260328075703251
+title: $:/plugins/.dtn/custom-styling/doc/override-list-indent-reduce
+type: text/vnd.tiddlywiki
+
+Overrides the standard styling for numbered and bulleted lists to reduce left padding, that is, the lists are displayed as close to flush left as possible. (Numbered lists cannot be moved as far left as bulleted lists because space needs to be left for item numbers >&#xa0;9.)
+
+---
+
+The definition tiddler is:
+
+|table-borderless|k
+| title:|[[$:/plugins/.dtn/custom-styling/override-tw-styles/list-indent-reduce]] |
+| tags:|$:/tags/Stylesheet |
+| type:|text/css |
+
+<$codeblock code={{$:/plugins/.dtn/custom-styling/override-tw-styles/list-indent-reduce}} language="css"/>

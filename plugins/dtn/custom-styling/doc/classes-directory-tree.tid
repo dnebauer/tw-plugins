@@ -1,0 +1,46 @@
+caption: .dir-tree (Directory Tree)
+created: 20190406071212057
+modified: 20260325105314162
+title: $:/plugins/.dtn/custom-styling/doc/classes-directory-tree
+type: text/vnd.tiddlywiki
+
+The <<.attr "dir-tree">> style, defined in [[$:/plugins/.dtn/custom-styling/custom-styles/dir-tree]], is used to convert a list to a directory tree.
+
+<<.note "This solution is not perfect: if all list items are children of the first list item, an unnecessary left-most descending connector is still displayed (as shown in the example below).">>
+
+For example, the following list:
+
+```tid
+@@.dir-tree
+* C:\Program Files
+** \My Programme
+*** \bin
+*** \src
+** \Other Programme
+*** \bin
+*** \src
+@@
+```
+
+results in:
+
+@@.dir-tree
+* C:\Program Files
+** \My Programme
+*** \bin
+*** \src
+** \Other Programme
+*** \bin
+*** \src
+@@
+
+---
+
+The definition tiddler is:
+
+|table-borderless|k
+| title:|[[$:/plugins/.dtn/custom-styling/custom-styles/dir-tree]] |
+| tags:|$:/tags/Stylesheet |
+| type:|text/css |
+
+<$codeblock code={{$:/plugins/.dtn/custom-styling/custom-styles/dir-tree}} language="css"/>

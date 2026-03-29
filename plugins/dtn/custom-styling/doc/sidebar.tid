@@ -1,0 +1,9 @@
+created: 20260329053308517
+modified: 20260329053308517
+tags:
+title: $:/plugins/.dtn/custom-styling/sidebar
+type: text/vnd.tiddlywiki
+
+Use the dialog below to toggle which tabs appear in the main and "More" sidebar tabs. Other tabs may be available, depending on the configuration of the [[$:/plugins/.dtn/custom-styling/override-tw-styles/sidebar-tab-configuration-customise]] tiddler.
+
+<$transclude $tiddler="$:/plugins/.dtn/custom-styling/override-tw-styles/sidebar-tab-configuration"/>

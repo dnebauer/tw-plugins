@@ -1,0 +1,28 @@
+caption: .blink-fast (Blink Text Fast)
+created: 20260324110436949
+modified: 20260325110126465
+title: $:/plugins/.dtn/custom-styling/doc/classes-blink-text-fast
+type: text/vnd.tiddlywiki
+
+The <<.attr "blink-fast">> style, defined in [[$:/plugins/.dtn/custom-styling/custom-styles/blink-fast]], is used to make text blink quickly.
+
+An example of use is:
+
+```
+@@color:green;.blink-fast green@@: connected and transmitting data
+```
+
+which renders as:
+
+@@color:green;.blink-fast green@@: connected and transmitting data
+
+---
+
+The definition tiddler is:
+
+|table-borderless|k
+| title:|[[$:/plugins/.dtn/custom-styling/custom-styles/blink-fast]] |
+| tags:|$:/tags/Stylesheet |
+| type:|text/css |
+
+<$codeblock code={{$:/plugins/.dtn/custom-styling/custom-styles/blink-fast}} language="css"/>

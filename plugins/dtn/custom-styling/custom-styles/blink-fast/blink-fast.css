@@ -1,0 +1,14 @@
+/* Styling to blink text fast */
+
+.blink-fast {
+  animation: blink_fast 0.5s infinite;
+}
+
+@keyframes blink_fast {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

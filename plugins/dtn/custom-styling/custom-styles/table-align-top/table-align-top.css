@@ -1,0 +1,6 @@
+/* Styling to align table cell content with top of row */
+
+.table-align-top td,
+.table-align-top th {
+  vertical-align: top;
+}

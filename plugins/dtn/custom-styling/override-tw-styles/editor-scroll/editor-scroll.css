@@ -1,0 +1,6 @@
+.tc-edit-texteditor,
+.tc-tiddler-preview-preview
+{
+    max-height: 50vh;  /* 1vh = 1% of the height of the viewport, i.e. browser window */
+    overflow-y: auto;  /* auto = add scrolling for overflowing boxes */
+}

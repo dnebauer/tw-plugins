@@ -1,0 +1,32 @@
+caption: .twocolumns .threecolumns .fourcolumns (Multiple Columns)
+created: 20190127113815671
+modified: 20260325105930214
+title: $:/plugins/.dtn/custom-styling/doc/classes-multiple-columns
+type: text/vnd.tiddlywiki
+
+Use css to display text in two, three or four columns.
+
+Creates the css classes <<.attr "twocolumns">>, <<.attr "threecolumns">> and <<.attr "fourcolumns">> which are applied using the <<.attr "@&#x2060;@">> construct (see [[Styles and Classes in WikiText]] for more details).
+
+Example usage:
+
+```tid
+The countries in which this applies are:
+
+@@.threecolumns
+* Australia
+* New Zealand
+* ...
+@@
+```
+
+---
+
+The definition tiddler is:
+
+|table-borderless|k
+| title:|[[$:/plugins/.dtn/custom-styling/custom-styles/multiple-columns]] |
+| tags:|$:/tags/Stylesheet |
+| type:|text/css |
+
+<$codeblock code={{$:/plugins/.dtn/custom-styling/custom-styles/multiple-columns}} language="css"/>

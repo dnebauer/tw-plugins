@@ -1,0 +1,16 @@
+caption: .table-align-top (Top-Align Table Cells)
+created: 20190411101414597
+modified: 20260325110025192
+title: $:/plugins/.dtn/custom-styling/doc/classes-table-align-top
+type: text/vnd.tiddlywiki
+
+The <<.attr "table-align-top">> style, defined in [[$:/plugins/.dtn/custom-styling/custom-styles/table-align-top]], is used to vertically align table cell content to the top of the cells.
+
+The definition tiddler is:
+
+|table-borderless|k
+| title:|[[$:/plugins/.dtn/custom-styling/custom-styles/table-align-top]] |
+| tags:|$:/tags/Stylesheet |
+| type:|text/css |
+
+<$codeblock code={{$:/plugins/.dtn/custom-styling/custom-styles/table-align-top}} language="css"/>

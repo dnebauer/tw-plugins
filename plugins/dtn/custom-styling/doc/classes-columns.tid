@@ -1,0 +1,34 @@
+caption: .columns .column-item (Multiple Columns)
+created: 20190608090422215
+modified: 20260325105731710
+title: $:/plugins/.dtn/custom-styling/doc/classes-columns
+type: text/vnd.tiddlywiki
+
+Use css to present content inside a tiddler split up into columns where the content flows to equal out the height of the columns and the view is responsive to tiddler width e.g as affected by device width.
+
+There is one "main" style, i.e., <<.attr "columns">>, but there are a few sub-level styles that are designed with typical TW tiddler lists in mind. A concrete example could be if you have a groceries list where all items are categorized by store department.
+
+* You create a nested list, surrounded by style <<.attr "columns">>
+* ...that shows the departments styled <<.attr "column-item">>
+* ...and the actual grocery items styled <<.attr "column-item-item">>
+
+For some reason these do not work with <<.attr "@&#x2060;@">> notation. Instead, use <<.attr "div">> elements:
+
+```
+<div class="columns">
+{{Some text}}
+</div>
+```
+
+---
+
+The definition tiddler is:
+
+|table-borderless|k
+| title:|[[$:/plugins/.dtn/custom-styling/custom-styles/columns]] |
+|  tags:|$:/tags/Stylesheet    |
+|  type:|text/css              |
+
+<$codeblock code={{$:/plugins/.dtn/custom-styling/custom-styles/columns}} language="css"/>
+
+Ref: [[http://columns.tiddlyspot.com/]]

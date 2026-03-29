@@ -1,0 +1,27 @@
+caption: Editor Window Scrolling
+created: 20260328075845369
+modified: 20260328080007047
+title: $:/plugins/.dtn/custom-styling/doc/override-editor-window-scrolling
+type: text/vnd.tiddlywiki
+
+The default style is for the editor and editor-preview panes to display at full size, meaning they can extend below the screen, sometimes for a considerable distance. This can make it difficult moving repeatedly between editor and preview panes.
+
+This styling overrides that behaviour so the panes take up no more than half the height of the browser window, and use scroll bars to display the full content.
+
+<<.warning "The panes remain unsynchronised, so you may need to scroll the preview pane to find the section corresponding to the currently displayed editor pane content.">>
+
+---
+
+The definition tiddler is:
+
+|table-borderless|k
+| title:|[[$:/plugins/.dtn/custom-styling/override-tw-styles/editor-scroll]] |
+| tags:|$:/tags/Stylesheet |
+| type:|text/css |
+
+<$codeblock code={{$:/plugins/.dtn/custom-styling/override-tw-styles/editor-scroll}} language="css"/>
+
+Credits:
+
+* [[Tiddlywiki Google Group Topic: Anchor top when editing tiddler|https://groups.google.com/d/msg/tiddlywiki/xO-lhnwYyZs/NaizzojZDQAJ]]
+* referenced later in [[Tiddlywiki Google Group Topic: Sticky editortoolbar?|https://groups.google.com/d/msg/tiddlywiki/XL2TXKgNKjU/Pq2vnYSeAAAJ]]

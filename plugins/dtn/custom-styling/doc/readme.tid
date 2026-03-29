@@ -1,0 +1,71 @@
+created: 20200921131642265
+modified: 20260328072825555
+tags:
+title: $:/plugins/.dtn/custom-styling/readme
+type: text/vnd.tiddlywiki
+
+There are 2 types of custom styling:
+
+* Custom style classes available for use in individual tiddlers
+* Overrides of standard Tiddlywiki styling to alter the appearance of tiddler content or the Tiddlywiki interface.
+
+! Custom classes
+
+This is a summary of the provided classes:
+
+|table-borderless table-align-top table-striped-row|k
+|Class |Usage |Notes |h
+|a |list style lower-alpha |a, b, c (apply to list items) |
+|A |list style upper-alpha |A, B, C (apply to list items) |
+|r |list style lower-roman |i, ii, iii (apply to list items) |
+|R |list style upper-roman |I, II, III (apply to list items) |
+|d |list style decimal |1, 2, 3 (apply to list items) |
+|D |list style decimal-leading-zero |01, 02, 03 (apply to list items) |
+|n |list style none |apply to list items |
+|blink-fast |cause text to blink quickly |  |
+|dir-tree |change list to directory tree |unordered list ('*' not '#') |
+|columns |columnified text |  |
+|column-item |columnified list, use with //columns// |  |
+|twocolumns |two columns |  |
+|threecolumns |three columns |  |
+|fourcolumns |four columns |  |
+|table-align-top |vertically align rows at top |  |
+|table-header-left |left align header row |  |
+
+Here is further detail about the classes.
+
+<$set name="classes_list" value="
+[[$:/plugins/.dtn/custom-styling/doc/classes-list-types]]
+[[$:/plugins/.dtn/custom-styling/doc/classes-blink-text-fast]]
+[[$:/plugins/.dtn/custom-styling/doc/classes-directory-tree]]
+[[$:/plugins/.dtn/custom-styling/doc/classes-columns]]
+[[$:/plugins/.dtn/custom-styling/doc/classes-multiple-columns]]
+[[$:/plugins/.dtn/custom-styling/doc/classes-table-align-top]]
+[[$:/plugins/.dtn/custom-styling/doc/classes-table-header-left]]
+">
+
+<$list filter="[enlist<classes_list>]">
+
+!! <$view field='caption'><$view field='title'/></$view>
+{{!!text}}
+
+</$list>
+
+! Overriding standard TW styling
+
+Here is the detail about overridden styling.
+
+<$set name="overrides_list" value="
+[[$:/plugins/.dtn/custom-styling/doc/override-body-font-size]]
+[[$:/plugins/.dtn/custom-styling/doc/override-editor-window-scrolling]]
+[[$:/plugins/.dtn/custom-styling/doc/override-list-indent-reduce]]
+[[$:/plugins/.dtn/custom-styling/doc/override-sidebar-tab-appearance]]
+[[$:/plugins/.dtn/custom-styling/doc/override-sidebar-tab-configuration]]
+">
+
+<$list filter="[enlist<overrides_list>]">
+
+!! <$view field='caption'><$view field='title'/></$view>
+{{!!text}}
+
+</$list>

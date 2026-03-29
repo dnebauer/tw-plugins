@@ -1,0 +1,16 @@
+caption: .table-header-left (Left-Align Table Header Cells)
+created: 20220313101239607
+modified: 20260325105230564
+title: $:/plugins/.dtn/custom-styling/doc/classes-table-header-left
+type: text/vnd.tiddlywiki
+
+The <<.attr "table-header-left">> style, defined in [[$:/plugins/.dtn/custom-styling/custom-styles/table-header-left]], is used to left-align table header cells.
+
+The definition tiddler is:
+
+|table-borderless|k
+| title:|[[$:/plugins/.dtn/custom-styling/custom-styles/table-header-left]] |
+|  tags:|$:/tags/Stylesheet |
+|  type:|text/css |
+
+<$codeblock code={{$:/plugins/.dtn/custom-styling/custom-styles/table-header-left}} language="css"/>
