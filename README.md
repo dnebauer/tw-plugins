@@ -49,19 +49,22 @@ the files `results` and `context.js`.
 
 Version: 2.1.0, Installed: 2026-03-03.
 
-## Enlist Allow Duplicates (plugins/dtn/enlist-allow-duplicates)
+## Custom Styling (plugins/dtn/custom-styling)
 
 ## Summary
 
-Provides the `enlistallowduplicates` operator, a drop-in replacement for the
-`enlist` operator except that it preserves duplicate list items.
+Captures all the styling changes made to my personal wiki. It includes custom
+css styles used to change the appearance of tidder content. The plugin also
+includes overrides of standard tiddlywiki styling and the user interface.
+
+See the plugin documentation for further details.
 
 ### Install
 
 This repository is the primary source for 'dtn' plugins. The plugin files are
-located in the repository's `plugins/dtn/enlist-allow-duplicates` directory.
+located in the repository's `plugins/dtn/custom-styling` directory.
 
-Version: 0.0.2, Installed: 2019-10-11.
+Version: 0.0.1, Installed: 2026-03-29.
 
 ## Favorites (plugins/kookma/favorites)
 
